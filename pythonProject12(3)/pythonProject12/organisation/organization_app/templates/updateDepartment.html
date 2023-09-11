@@ -1,0 +1,120 @@
+ {% include 'base.html' %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Institute</title>
+    {% load static %}
+
+<style>
+#image-preview {
+            max-width: 150px;
+            max-height: 150px;
+            margin-bottom:10px;
+        }
+ img{
+            max-width: 150px;
+            max-height: 150px;
+            margin:10px;
+
+
+ }
+  body{
+    color:black;
+    background-color:#fdf5e6;
+    }
+
+.h1_title{
+text-align:center;
+margin-bottom:1%;
+margin-top:1%;
+}
+
+.title{
+
+height:4%;
+}
+
+.col-lg-6{
+box-size:
+box-shadow: 10px 10px 5px lightblue;
+background-color:white;
+}
+
+</style>
+</head>
+<body>
+<div class="title">
+    <h1 class="h1_title">Update</h1>
+</div>
+    <div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-6">
+            <form method="post" enctype="multipart/form-data" class="form_align" onsubmit="return validate();">
+                {% csrf_token %}
+                <div class="mb-3">
+                    <label for="id_name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="id_name" name="name" required placeholder="Name">
+                </div>
+               <div class="mb-3">
+                    <label for="id_email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="id_email" name="email" required placeholder="Email">
+                </div>
+                <div class="mb-3">
+                    <label for="id_phone" class="form-label">Phone</label>
+                    <input type="text" class="form-control" id="id_phone" name="phone" required placeholder="Phone">
+                </div>
+
+                <div class="mb-3">
+                    <label for="id_www" class="form-label">Website</label>
+                    <input type="url" class="form-control" id="id_www" name="www" required placeholder="Website">
+                </div>
+
+                 <div class="mb-3">
+                    <label >Institute</label>
+                   {{form.insitute}}
+                </div>
+                <a href="{% url 'update_department' department.id %}"><button class="btn btn-primary" type="submit">Save</button></a>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+
+    <script>
+        window.onload = function() {
+            // Populate form fields with existing values
+            var emailField = document.getElementById("id_email");
+            var phoneField = document.getElementById("id_phone");
+            var nameField=document.getElementById("id_name");
+            var wwwField=document.getElementById("id_www");
+
+
+            emailField.value = "{{ department.email }}";
+            phoneField.value = "{{ department.phone }}";
+            nameField.value="{{ department.name }}";
+            wwwField.value="{{ department.www }}";
+        };
+
+   function validate() {
+  // Get the input value
+  var phoneInput = document.getElementById("id_phone").value;
+
+  // Define the regular expression pattern
+  var phonePattern = /^\d{10}$/;
+
+  // Check if the input matches the pattern
+
+  if (!phonePattern.test(phoneInput)) {
+    // Phone number is invalid
+    alert("Phone Number must have exactly 10 digits.");
+    return false;
+  }
+
+  // Both PIN and phone number are valid
+  return true;
+};
+    </script>
+
+</body>
+</html>

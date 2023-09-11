@@ -1,0 +1,106 @@
+ {% include 'base.html' %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Stream</title>
+    {% load static %}
+
+<style>
+#image-preview {
+            max-width: 150px;
+            max-height: 150px;
+            margin-bottom:10px;
+        }
+ img{
+            max-width: 150px;
+            max-height: 150px;
+            margin:10px;
+
+
+ }
+  body{
+    color:black;
+    background-color:#fdf5e6;
+    }
+
+.h1_title{
+text-align:center;
+margin-bottom:1%;
+margin-top:1%;
+}
+
+.title{
+
+height:4%;
+}
+
+.col-lg-6{
+box-size:
+box-shadow: 10px 10px 5px lightblue;
+background-color:white;
+}
+
+</style>
+</head>
+<body>
+<div class="title">
+    <h1 class="h1_title">Update Stream</h1>
+</div>
+    <div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-6">
+            <form method="post" enctype="multipart/form-data" class="form_align">
+                {% csrf_token %}
+                <div class="mb-3">
+                    <label for="id_name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="id_name" name="name" required placeholder="Name">
+                </div>
+                 <div class="mb-3">
+                    <label for="id_name" class="form-label">Program Category</label>
+<!--                     <label for="id_name" class="form-label">Program</label>-->
+<!--                    {{form.program}}-->
+                       <label style=" color:grey" >program category</label> &nbsp;
+                         <select class="form-select" name="program_category">
+                              <option value="">Select</option>
+                           {% for i in prgctg %}
+                             {% if i.status %}
+                              <option value={{i.id}} {%if i.name == s_prgctg %} selected {% endif %} >{{i.name}}</option>
+                             {% endif %}
+                             {% endfor %}
+                            </select>
+                </div>
+                 <div class="mb-3">
+                    <label for="id_name" class="form-label">Program</label>
+<!--                    {{form.program}}-->
+                       <label style=" color:grey" >Program level</label> &nbsp;
+                         <select class="form-select" name="program">
+                              <option value="">Select</option>
+                           {% for i in pgrm %}
+                             {% if i.status %}
+                              <option value={{i.id}} {%if i.name == s_pgm %} selected {% endif %} >{{i.name}}</option>
+                             {% endif %}
+                             {% endfor %}
+                            </select>
+                </div>
+
+                <a href="{% url 'update_stream' strm.id %}"><button class="btn btn-primary" type="submit">Save</button></a>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+    <script>
+        window.onload = function() {
+            // Populate form fields with existing values
+            var nameField=document.getElementById("id_name");
+
+            nameField.value="{{ strm.name }}";
+        };
+    </script>
+<script>
+
+    </script>
+
+</body>
+</html>

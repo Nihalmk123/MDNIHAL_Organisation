@@ -1,0 +1,148 @@
+ {% include 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+<style>
+.custom-color{
+background-color:#263049;
+color:white;
+}
+    .table thead th {
+    background-color: #F2d742; /* Change this to your desired color */
+    color: white;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f2f2f2; /* Change this to your desired color */
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f9f9f9; /* Change this to your desired color */
+}
+.btn {
+    margin-right: 5px; /* Add spacing between buttons */
+}
+
+
+</style>
+
+</head>
+
+<body>
+ {% include 'navbar.html' %}
+
+
+<form>
+           {% if messages %}
+  <div class="toast-container">
+    {% for message in messages %}
+      <div class="toast show">
+        <div class="message {% if message.success %}{{ message.success }}{% endif %}">
+          <i class="bi bi-check2-circle text-light ">&nbsp;</i>{{ message }}
+        </div><i class="bi "></i>
+        <button class="close-button" onclick="hideToast(this)"><i class="bi bi-x text-white"></i></button>
+        <div class="progress-bar"></div>
+      </div>
+    {% endfor %}
+  </div>
+{% endif %}
+     <div class="container-fluid">
+     <div class="card px-1 py-2 m-3">
+         <div class="card-header-pills p-2 mb-1 custom-color m-1"><div class="custom-color">Manage Office Bearer</div></div>
+    <!-- Scrollable content -->
+         <hr class="btn-danger">
+            {% if office_bearer_details %}
+                <table id="user-roles-records"
+                               class="table table-responsive-md table-striped table-bordered table-hover table-sm"
+                               cellspacing="0" width="100%">
+                    <thead class="bg-danger text-white">
+                        <tr>
+                            <th>Name</th>
+                            <th>Photo</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Address</th>
+                            <th>State</th>
+                            <th>City</th>
+                            <th>Designation</th>
+                            <th>Committee</th>
+                            <th>Society</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for office in office_bearer_details %}
+                            <tr>
+                                <td>{{ office.name }}</td>
+                                <td>
+                                    {% if office.photo %}
+                                        <img src="{{ office.photo }}" alt="" class="img-fluid society-logo">
+                                    {% endif %}
+                                </td>
+                                <td>{{ office.email }}</td>
+                                <td>{{ office.phone }}</td>
+                                <td>{{ office.address }}</td>
+                                <td>{{ office.state }}</td>
+                                 <td>{{ office.city }}</td>
+                                <td>{{ office.designation }}</td>
+                                <td>{{ office.committee }}</td>
+                                <td>{{ office.societyy }}</td>
+                                <td>{{ office.status }}</td>
+                                <td>
+                                     <a href="{% url 'update_office_bearer' office.id%}"class="btn btn-success px-2 py-2" role="button"
+                                     title="Edit Manage OfficeBearers">
+                                         <span class="text-center">
+                                         <i class="bi bi-pencil-fill"></i>
+                                         </span>
+                                     </a>
+                                   <a href="{% url 'office_bearer_delete' office.id %}"class="btn btn-danger px-2 py-2" role="button"
+                                       title="Delete Manage OfficeBearers">
+                                         <span class="text-center">
+                                       <i class="bi bi-trash-fill"></i>
+                                         </span></a>
+                                     {% if office.status %}
+                                        <a href="{% url 'office_bearer_activate' office.id %}" class="btn btn-success px-2 py-2"   role="button"
+                                        title="Active Manage OfficeBearers">
+                                             <span class="text-center">
+                                                <i class="bi bi-check-circle-fill fa-lg"
+                                                   aria-hidden="true"></i>
+                                            </span>
+                                        </a>
+                                    {% else %}
+                                        <a href="{% url 'office_bearer_activate' office.id %}" class="btn btn-danger px-2 py-2" role="button"
+                                        title="DeActive Manage OfficeBearers">
+                                             <span class="text-center">
+                                                <i class="bi bi-check-circle-fill fa-lg"
+                                                   aria-hidden="true"></i>
+                                             </span></a>
+                                    {% endif %}
+                                </td>
+                                 </td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            {% else %}
+                <p>No Office-Bearers found.</p>
+            {% endif %}
+        </div>
+    </div>
+     </div>
+     </div>
+</div>
+</div>
+</form>
+
+
+ <script>
+    $(document).ready(function () {
+      $('table').DataTable();
+
+    });
+  </script>
+</body>
+</html>

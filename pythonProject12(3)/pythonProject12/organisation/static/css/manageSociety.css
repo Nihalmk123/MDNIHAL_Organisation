@@ -1,0 +1,33 @@
+
+    .table-container {
+        margin-left:30%;
+         display: flex;
+        justify-content: center;
+    }
+
+
+    .table-container table {
+        width: 100%;
+    }
+
+
+    .table-container th {
+        background-color: #dc3545;
+        color: white;
+    }
+
+    .table-container td,
+    .table-container th {
+        padding: 10px;
+        vertical-align: middle;
+    }
+
+
+    .table-container .society-logo {
+        max-width: 100px;
+        height: auto;
+    }
+
+    .table-container .btn {
+        margin-right: 5px;
+    }

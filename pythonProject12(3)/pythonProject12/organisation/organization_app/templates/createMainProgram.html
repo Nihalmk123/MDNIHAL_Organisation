@@ -1,0 +1,158 @@
+ {% include 'base.html' %}    {% load static %} {% load json_tag %}
+
+<html>
+<head>
+
+    <title>Create Main Program</title>
+</head>
+<body class="bg-warning-subtle">
+
+ {% include 'navbar.html' %}
+
+        <div class="container-fluid py-5">
+    <div class="row">
+        <div class="col-lg-4 offset-lg-4"> <!-- Offset 4 columns to center the form -->
+            <!-- Sidebar with scroll bar -->
+            <div class="form-container">
+                <form method="POST"  enctype="multipart/form-data">
+                    {% csrf_token %}
+
+        <h3 class="text-lg-center text-primary-emphasis">Create Program</h3>
+        <div class="container-sm">
+        <div class="input-group">
+            <label>Department</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select name="department" class="form-select form-select mb-4">
+                <option value="">Select</option>
+                {% for i in department %}
+                {% if i.status %}
+                <option value="{{i.id}}">{{i.name}}</option>
+                {% endif %}
+                {% endfor %}
+            </select>
+        </div>
+
+           <div class="input-group">
+    <label>Program Category</label>
+    <select id="id_program_category" name="program_category" class="form-select form-select mb-4">
+        <option value="">Select</option>
+        {% for i in program_categories %}
+        {% if i.status %}
+        <option value="{{i.id}}">{{i.name}}</option>
+        {% endif %}
+
+        {% endfor %}
+    </select>
+</div>
+
+
+<!--<div class="input-group">-->
+<!--    <label>Programs</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+<!--    <select class="selectpicker" name="program" id="program" >-->
+<!--    </select>-->
+<!--</div>-->
+            <div class="input-group">
+    <label>Program</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <select name="program" id="id_program" class="form-select form-select mb-4">
+        <option value="">Select</option>
+        {% for i in programs %}
+        {%  if i.status == 1  %}
+        <option value="{{i.id}}">{{i.name}}</option>
+        {% endif %}
+        {% endfor %}
+    </select>
+</div>
+
+<div class="input-group">
+    <label>Stream</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <select name="stream" id="id_stream" class="form-select form-select mb-4">
+        <option value="">Select</option>
+        {% for i in streams %}
+        {%  if i.status == 1  %}
+        <option value="{{i.id}}">{{i.name}}</option>
+        {% endif %}
+        {% endfor %}
+    </select>
+</div>
+
+<div class="input-group">
+    <label>Duration</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" class="form-control" name="duration" required placeholder="Duration">
+</div>
+</div>
+
+<button type="submit" id="submit" class="btn btn-primary">Submit</button>
+</form>
+            </div></div></div></div>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var programCategorySelect = document.getElementById('id_program_category');
+    var programSelect = document.getElementById('id_program');
+    var streamSelect = document.getElementById('id_stream');
+
+    programCategorySelect.addEventListener('change', function() {
+        var programCategoryId = this.value;
+        programSelect.innerHTML = '<option value="">---------</option>';
+        streamSelect.innerHTML = '<option value="">---------</option>';
+        programSelect.disabled = true;
+        streamSelect.disabled = true;
+
+        if (programCategoryId !== '') {
+            console.log("valid");
+            fetch('/get_programs/?program_category_id=' + programCategoryId)
+
+                .then(function(response) {
+                    return response.json();
+                })
+                .then(function(data) {
+                    data.programs.forEach(function(program) {
+                        if (program.status == 1) {
+                            var option = document.createElement('option');
+                            option.value = program.id;
+                            option.textContent = program.name;
+                            programSelect.appendChild(option);
+                        }
+                    });
+
+                    programSelect.disabled = false;
+                });
+        }
+    });
+
+    programSelect.addEventListener('change', function() {
+        var programId = this.value;
+        streamSelect.innerHTML = '<option value="">---------</option>';
+        streamSelect.disabled = true;
+
+        if (programId !== '') {
+            fetch('/get_streams/?program_id=' + programId)
+                .then(function(response) {
+                    return response.json();
+                })
+                .then(function(data) {
+                    data.streams.forEach(function(stream) {
+                        if (stream.status == 1) {
+                            var option = document.createElement('option');
+                            option.value = stream.id;
+                            option.textContent = stream.name;
+                            streamSelect.appendChild(option);
+                        }
+                    });
+
+                    streamSelect.disabled = false;
+                });
+        }
+    });
+
+    // Disable the program and stream selects initially
+programSelect.disabled = true;
+streamSelect.disabled = true;
+
+});
+</script>
+
+
+
+</body>
+</html>

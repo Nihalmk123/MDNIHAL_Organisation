@@ -1,0 +1,42 @@
+html.js [kle-aos] {
+    z-index: 0;
+}
+
+html.js [kle-aos^="fade"]:not(.kle-aos-animate) {
+    opacity: 0;
+}
+
+html.js [kle-aos^="slide-up"]:not(.kle-aos-animate) {
+    transform: translateY(100px);
+}
+
+html.js [kle-aos^="slide-down"]:not(.kle-aos-animate) {
+    transform: translateY(-100px);
+}
+
+html.js [kle-aos^="slide-left"]:not(.kle-aos-animate) {
+    transform: translate(100px);
+}
+
+html.js [kle-aos^="slide-right"]:not(.kle-aos-animate) {
+    transform: translate(-100px);
+}
+
+html.js [kle-aos^="zoom-in"]:not(.kle-aos-animate) {
+    transform: scale(0.9);
+}
+
+html.js [kle-aos^="zoom-out"]:not(.kle-aos-animate) {
+    transform: scale(1.1);
+}
+
+html.js .gsap-animated {
+    opacity: 0;
+}
+
+@media (prefers-reduced-motion) {
+    [kle-aos] {
+        opacity: 1 !important;
+        transform: none !important;
+    }
+}

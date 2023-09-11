@@ -1,0 +1,33 @@
+  #image-preview {
+            max-width: 150px;
+            max-height: 150px;
+            margin-bottom:10px;
+        }
+ img{
+            max-width: 150px;
+            max-height: 150px;
+            margin:10px;
+
+
+ }
+  body{
+    color:blue;
+    background-color:#86b7fe5e;
+    }
+
+.h1_title{
+margin-left:45%;
+margin-bottom:1%;
+margin-top:1%;
+}
+
+.title{
+
+height:4%;
+}
+
+.col-lg-6{
+box-size:
+box-shadow: 10px 10px 5px lightblue;
+background-color:white;
+}

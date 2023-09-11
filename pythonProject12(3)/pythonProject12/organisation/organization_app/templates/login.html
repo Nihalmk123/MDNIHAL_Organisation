@@ -1,0 +1,83 @@
+ {% include 'base.html' %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/toast.css' %}">
+    <style>
+    .btn-success:hover {
+    background-color: #218838; /* Change this color for the hover effect */
+    border-color: #1e7e34;
+}
+    .bg-warning-subtle {
+    background-color: red; /* Change this color to your desired background color */
+}
+        .card-header {
+            background-color: #3498db; /* Change this color code to your desired color */
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;        }
+
+        .card-title {
+            color: white; /* Change text color to contrast with the background color */
+            margin: 0;
+        }
+
+
+    </style>
+</head>
+
+<body class="bg-warning-subtle">
+    <div class="container rounded">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="card round">
+                    <div class="clogo ">
+                    <div   class="logo ">
+<!--                    <img class="img-fluid" src="" width="300" height="75">-->
+                    </div>
+                        </div>
+                    <div class="card-header">
+                        <h2 class="card-title">Login</h2>
+                    </div>
+                    <div class="card-body">
+                        <form method="POST" class="row g-3">
+                            {% csrf_token %}
+                            <div class="col-md-12">
+                                <label for="inputEmail4" class="form-label">Username</label>
+                                <input type="text" class="form-control" id="inputEmail4" name="username">
+                            </div>
+                            <div class="col-md-12">
+                                <label for="inputPassword4" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="inputPassword4" name="password">
+                            </div>
+                            <div class="d-grid gap-2 col-6 mx-auto">
+                                <button type="submit" class="btn btn-success ">Login</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   {% if messages %}
+  <div class="toast-container">
+    {% for message in messages %}
+      <div class="toast show">
+        <div class="message {% if message.error %}{{ message.error }}{% endif %}">
+          <i class="bi bi-bookmark-x text-danger ">&nbsp;</i>{{ message }}
+        </div><i class="bi "></i>
+        <button class="close-button" onclick="hideToast(this)"><i class="bi bi-x text-white"></i></button>
+        <div class="progress-bar"></div>
+      </div>
+    {% endfor %}
+  </div>
+{% endif %}
+
+<script src="{% static '/javascript/toast.js' %}"></script>
+
+</body>
+
+</html>
+

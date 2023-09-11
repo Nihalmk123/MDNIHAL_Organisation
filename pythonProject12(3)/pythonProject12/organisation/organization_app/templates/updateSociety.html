@@ -1,0 +1,170 @@
+ {% include 'base.html' %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Society</title>
+    {% load static %}
+    <title>Create Society</title>
+
+<style>
+#image-preview {
+            max-width: 150px;
+            max-height: 150px;
+            margin-bottom:10px;
+        }
+ img{
+            max-width: 150px;
+            max-height: 150px;
+            margin:10px;
+
+
+ }
+  body{
+    color:black;
+    background-color:#fdf5e6;
+    }
+
+.h1_title{
+text-align:center;
+margin-bottom:1%;
+margin-top:1%;
+}
+
+.title{
+
+height:4%;
+}
+
+.col-lg-6{
+box-size:
+box-shadow: 10px 10px 5px lightblue;
+background-color:white;
+}
+
+</style>
+</head>
+<body>
+<div class="title">
+    <h1 class="h1_title">Update Society</h1>
+</div>
+    <div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-6">
+            <form method="post" enctype="multipart/form-data"  class="form_align" onsubmit="return validate();">
+                {% csrf_token %}
+                <div class="mb-3">
+                    <label for="id_name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="id_name" name="name" required placeholder="Name">
+                </div>
+                <div class="mb-3">
+                    <label for="id_address" class="form-label">Address</label>
+                    <input type="text" class="form-control" id="id_address" name="address" required placeholder="Address">
+                </div>
+                <div class="mb-3">
+                    <label for="id_state" class="form-label">State</label>
+                    <input type="text" class="form-control" id="id_state" name="state" required placeholder="State">
+                </div>
+
+                <div class="mb-3">
+                    <label for="id_city" class="form-label">City</label>
+                    <input type="text" class="form-control" id="id_city" name="city" required placeholder="City">
+                </div>
+                <div class="mb-3">
+                    <label for="id_www" class="form-label">Website</label>
+                    <input type="url" class="form-control" id="id_www" name="www" required placeholder="Website">
+                </div>
+                <div class="mb-3">
+                    <label for="id_email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="id_email" name="email" required placeholder="Email">
+                </div>
+                <div class="mb-3">
+                    <label for="id_phone" class="form-label">Phone</label>
+                    <input type="text" class="form-control" id="id_phone" name="phone" required placeholder="Phone">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Logo</label>
+                    {{form.logo}}
+<!--                    <input type="file" class="form-control" id="id_logo" name="logo" accept="image/*" required>-->
+                </div>
+                <div id="image-preview" class="mb-3"></div>
+             <a href="{% url 'update_society' society.id %}"> <button class="btn btn-primary" type="submit" name="update">Save</button></a>
+
+            </form>
+             {% if society.logo %}
+    <img class="image" src="{{ society.logo }}" alt="Existing Logo" >
+            <p>Existing logo</p>
+    {% endif %}
+        </div>
+    </div>
+</div>
+
+    <script>
+        window.onload = function() {
+            // Populate form fields with existing values
+            var emailField = document.getElementById("id_email");
+            var phoneField = document.getElementById("id_phone");
+            var nameField=document.getElementById("id_name");
+            var addressField=document.getElementById("id_address");
+            var stateField=document.getElementById("id_state");
+            var cityField=document.getElementById("id_city");
+            var wwwField=document.getElementById("id_www");
+            var logoField=document.getElementById("id_logo");
+
+            emailField.value = "{{ society.email }}";
+            phoneField.value = "{{ society.phone }}";
+            nameField.value="{{ society.name }}";
+            addressField.value="{{ society.address }}";
+            stateField.value="{{society.state}}";
+            cityField.value="{{ society.city }}";
+            wwwField.value="{{ society.www }}";
+            logoField.value="{{society.logo}}";
+
+        };
+
+          function validate() {
+  // Get the input value
+  var phoneInput = document.getElementById("id_phone").value;
+
+  // Define the regular expression pattern
+  var phonePattern = /^\d{10}$/;
+
+  // Check if the input matches the pattern
+
+  if (!phonePattern.test(phoneInput)) {
+    // Phone number is invalid
+    alert("Phone Number must have exactly 10 digits.");
+    return false;
+  }
+
+  // Both PIN and phone number are valid
+  return true;
+};
+    </script>
+<script>
+        // javaScript code to update the image preview
+        var logoInput = document.getElementById('id_logo');
+        var imagePreview = document.getElementById('image-preview');
+
+        logoInput.addEventListener('change', function(event) {
+            var file = event.target.files[0];
+
+            if (file) {
+                var reader = new FileReader();
+
+                reader.addEventListener('load', function() {
+                    var imageElement = document.createElement('img');
+                    imageElement.src = reader.result;
+                    imagePreview.innerHTML = '';
+                    imagePreview.appendChild(imageElement);
+                });
+
+                reader.readAsDataURL(file);
+            } else {
+                imagePreview.innerHTML = '';
+            }
+        });
+
+    </script>
+
+</body>
+</html>

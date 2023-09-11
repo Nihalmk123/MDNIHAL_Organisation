@@ -1,0 +1,898 @@
+    {% load static %}
+<!DOCTYPE html>
+<html >
+
+<head>
+    <title>
+        Top University in Karnataka | Top College in South India | KLE Tech
+    </title>
+
+
+
+    <link href="{% static 'statics/css/bootstrap.min.css'%}" rel="stylesheet" />
+    <!-- bootstrap-cdn-end -->
+    <!-- google-fonts-start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&amp;family=Roboto+Condensed:wght@700&amp;family=Roboto+Slab:wght@700&amp;family=Roboto:wght@100;300;400;500;700;900&amp;display=swap" rel="stylesheet"
+    />
+<!--    <link rel="stylesheet" type="text/css" href="{% static 'css/navbar.css' %}">-->
+    <link rel="stylesheet" type="text/css" href="{% static 'statics/css/owl.carousel.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'statics/css/owl.theme.default.min.css' %}" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="{% static 'statics/css/style.css'%}" />
+    <link rel="stylesheet" href="{% static 'statics/css/header.css'%}" />
+    <link rel="stylesheet" href="{% static 'statics/css/footer.css'%}" />
+    <link rel="stylesheet" href="{% static 'statics/css/aos.css' %}" />
+    <link rel="stylesheet" href="{% static 'statics/css/home-responsive.css' %}" />
+<style>
+.card-container {
+  display: flex;
+  justify-content: normal;
+}
+
+.card {
+  width: 10cm;
+  height: 10cm;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+margin-left:0.5cm;
+}
+
+.card-image {
+  border-radius: 5px 5px 0 0;
+}
+.card-image{
+margin-left:1.1cm;
+margin-bottom:0.5cm;
+margin-top:0.35cm;
+}
+
+</style>
+    <!-- Google Tag Manager -->
+
+    <!-- End Google Tag Manager -->
+
+
+
+</head>
+
+<body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WX4TCBZ"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <form>
+
+        <!-- header-start -->
+        <header class="header">
+            <div class="inner-header">
+
+
+                <div class="navbar-head">
+                    <div class="container-fluid">
+                        <nav class="navbar">
+                            <div class="navbar-logo">
+                                <a href=""><img src="{% static 'statics/images/logo.png'%}" alt="KLE University" /></a>
+                            </div>
+
+                            <div class="navbar-item">
+                                <ul class="navbar-links">
+
+                                    <li id="mainmenu1_rptrMenu_ctl00_l1" class="drop-menu">
+                                        <a href="" id="mainmenu1_rptrMenu_ctl00_ank">About</a>
+
+
+                                        <ul id="mainmenu1_rptrMenu_ctl00_panelsub" class="sub-menu">
+
+
+                                            <li id="mainmenu1_rptrMenu_ctl00_rptsubinnermenu_ctl00_liinner"><a href="">Overview</a>
+
+
+                                            </li>
+
+
+                                            <li id="mainmenu1_rptrMenu_ctl00_rptsubinnermenu_ctl01_liinner"><a href="">KLE Society</a>
+
+
+                                            </li>
+
+
+
+                                        </ul>
+                                    </li>
+
+
+                                    <li id="mainmenu1_rptrMenu_ctl01_l1" class="mega-menu">
+                                        <a href="javascript:void(0)" id="mainmenu1_rptrMenu_ctl01_ank">Programs</a>
+                                        <div id="mainmenu1_rptrMenu_ctl01_panel1" class="mega-menu-content">
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <div class="mega-left-content">
+                                                        <div class="mega-lt-content">
+                                                            <h3> <a href=""> Programmes </a></h3>
+                                                            <ul>
+
+                                                                <li>
+                                                                    <a href="hubballi" id="mainmenu1_rptrMenu_ctl01_rptcollagecampus_ctl00_ank" class="active1">Hubballi Campus</a>
+
+                                                                </li>
+
+
+
+                                                            </ul>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-9">
+
+                                                    <div class="mega-right-content active-item1">
+                                                        <div class="row">
+
+
+                                                            <div class="col-md-12">
+                                                                <div class="mega-rt-content">
+                                                                    <h3>Undergraduate</h3>
+                                                                </div>
+                                                                <div class="mega-rb-content">
+                                                                    <ul>
+
+                                                                    {% for i in program %}
+                                                                        {% if i.status and i.program_category.name == 'Undergraduate' %}
+                                                                            <li value="{{ i.id }}"><a>{{ i.stream }}</a></li>
+                                                                        {% endif %}
+                                                                    {% endfor %}
+
+
+                                                                        <li></li>
+
+
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+
+
+
+
+                                                            <div class="col-md-12">
+                                                                <div class="mega-rt-content">
+                                                                    <h3>Postgraduate</h3>
+                                                                </div>
+                                                                <div class="mega-rb-content">
+                                                                    <ul>
+                                                                         {% for i in program %}
+                                                                        {% if i.status and i.program_category.name == 'Postgraduate' %}
+                                                                            <li value="{{ i.id }}"><a>{{ i.stream }}</a></li>
+                                                                        {% endif %}
+                                                                    {% endfor %}
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-12">
+                                                                <div class="mega-rt-content">
+                                                                    <h3>Phd</h3>
+                                                                </div>
+                                                                <div class="mega-rb-content">
+                                                                    <ul>
+                                                                         {% for i in program %}
+                                                                        {% if i.status and i.program_category.name == 'Doctorate' %}
+                                                                            <li value="{{ i.id }}"><a>{{ i.stream }}</a></li>
+                                                                        {% endif %}
+                                                                    {% endfor %}
+
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+
+
+
+
+
+
+
+                                                            <div class="col-md-12">
+                                                                <div class="mega-rt-content">
+
+                                                                </div>
+                                                                <div class="mega-rb-content">
+                                                                                              </div>
+                                                            </div>
+
+
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="mega-right-content active-item3">
+                                                        <div class="row">
+
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </li>
+
+                                    <li id="mainmenu1_rptrMenu_ctl01_l11" class="mega-menu">
+                                        <a href="javascript:void(0)" id="mainmenu1_rptrMenu_ctl01_ankk">Department</a>
+                                        <div id="mainmenu1_rptrMenu_ctl01_panel11" class="mega-menu-content">
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <div class="mega-left-content">
+                                                        <div class="mega-lt-content">
+                                                            <h3> <a href=""> Department </a></h3>
+                                                            <ul>
+                                                                    {% for i in department %}
+                                                                        {% if i.status  %}
+                                                                            <li id="" class="" value="{{ i.id }}"><a>{{ i.name }}</a></li>
+                                                                        {% endif %}
+                                                                    {% endfor %}
+
+                                                            </ul>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-9">
+
+                                                    <div class="mega-right-content active-item1">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <div class="mega-rt-content">
+
+                                                                </div>
+                                                                <div class="mega-rb-content">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="mega-right-content active-item3">
+                                                        <div class="row">
+
+
+
+
+
+
+
+<!--                                                            <div class="col-md-12">-->
+<!--                                                                <div class="mega-rt-content">-->
+<!--                                                                    <h3>PG Diploma & Certificate Courses </h3>-->
+<!--                                                                </div>-->
+<!--                                                                <div class="mega-rb-content">-->
+<!--                                                                   -->
+<!--                                                                </div>-->
+<!--                                                            </div>-->
+
+
+
+
+
+
+
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </li>
+
+                                    <li id="mainmenu1_rptrMenu_ctl01_l111" class="mega-menu">
+                                        <a href="javascript:void(0)" id="mainmenu_rptrMenu_ctl01_ankk1">Office Bearers</a>
+                                        <div id="mainmenu1_rptrMenu_ctl01_panel111" class="mega-menu-content">
+                                                {% for i in office_bearer %}
+                                            <div class="card-container">
+                                                     <div class="card">
+                                                     {% if i.status %}
+                                                      <div class="container">
+                                                         <img class="card-image" src="{{i.photo.url}}" alt="Avatar" style="width:75%; height:75%;">
+                                                        <h4 style="font-size:15px;"><b>Name:</b>{{i.name}}</h4>
+                                                        <p style="font-size:15px;"><b>{{i.committee}}</b></p>
+                                                             </div>
+                                                            </div>
+                                                     {% endif %}
+                                            {% endfor %}
+<!--                                            <div class="row">-->
+<!--                                                <div class="col-md-3">-->
+<!--                                                    <div class="mega-left-content">-->
+<!--                                                        <div class="mega-lt-content">-->
+<!--                                                            <h3> <a href=""> Office Bearers </a></h3>-->
+
+
+
+<!--                                                        </div>-->
+
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                                <div class="col-md-9">-->
+
+<!--                                                    <div class="mega-right-content active-item1">-->
+<!--                                                        <div class="row">-->
+<!--                                                            <div class="col-md-12">-->
+<!--                                                                <div class="mega-rt-content">-->
+
+<!--                                                                </div>-->
+<!--                                                                <div class="mega-rb-content">-->
+<!--                                                                </div>-->
+<!--                                                            </div>-->
+<!--                                                        </div>-->
+<!--                                                    </div>-->
+
+<!--                                                    <div class="mega-right-content active-item3">-->
+<!--                                                        <div class="row">-->
+
+
+
+<!--                                                            <div class="col-md-12">-->
+<!--                                                                <div class="mega-rt-content">-->
+<!--                                                                    <h3>PG Diploma & Certificate Courses </h3>-->
+<!--                                                                </div>-->
+<!--                                                                <div class="mega-rb-content">-->
+<!--                                                                   -->
+<!--                                                                </div>-->
+<!--                                                            </div>-->
+
+<!--                                                        </div>-->
+<!--                                                    </div>-->
+
+
+<!--                                                </div>-->
+<!--                                            </div>-->
+                                        </div>
+
+                                    </li>
+
+
+
+<!--                                    <li id="mainmenu1_rptrMenu_ctl03_l1" class="drop-menu">-->
+<!--                                        <a href="" id="mainmenu1_rptrMenu_ctl03_ank">Campus</a>-->
+
+
+<!--                                        <ul id="mainmenu1_rptrMenu_ctl03_panelsub" class="sub-menu">-->
+
+
+
+<!--&lt;!&ndash;                                            <li><a href="" id="mainmenu1_rptrMenu_ctl03_rptcampusmain_ctl00_ank">Hubballi Campus</a></li>&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;                                            <li><a href="" id="mainmenu1_rptrMenu_ctl03_rptcampusmain_ctl01_ank">Belagavi Campus</a></li>&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;                                            <li><a href="" id="mainmenu1_rptrMenu_ctl03_rptcampusmain_ctl02_ank">Bengaluru Campus</a></li>&ndash;&gt;-->
+
+<!--                                        </ul>-->
+<!--                                    </li>-->
+
+
+
+
+
+
+                                            </li>
+
+
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                                <div class="menu-item">
+
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <figure class="hembg_wrap"><img src="{% static 'statics/images/hembg.svg'%}" alt="Background Image"></figure>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="menu-top-links">
+                                                    </div >
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="menu-top-links">
+
+
+
+                                                    </div >
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="menu-top-links">
+
+
+
+
+
+
+                                                    </div >
+                                                </div >
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                            <div class="burger">
+                                <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+        <!-- header-end -->
+        <!-- banner-start -->
+        <div class="banner">
+            <div class="owl-carousel owl-theme banner-carousel">
+
+
+
+
+
+                <div class="item">
+                    <picture>
+
+                        <div id="homebanner1_rephomebanner_ctl00_panelmobile">
+                            <source media="(min-width:320px)" srcset="{% static 'statics/Uploads/banner/12hbanner_group-banner.jpg'%}" alt="KLE" class="img-fluid">
+                        </div>
+                        <img src="{% static 'statics/Uploads/banner/12hbanner_group-banner.jpg'%}" class="img-fluid" alt="KLE">
+
+                    </picture>
+                    <div class="banner-siede-pannel">
+                        <div class="pannelw-info">
+                            <div class="banwner-content">
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- side-pannel-end -->
+                </div>
+
+
+
+
+
+                <div class="item">
+                    <picture>
+
+                        <div id="homebanner1_rephomebanner_ctl01_panelmobile">
+                            <source media="(min-width:320px)" srcset="{% static 'statics/Uploads/banner/14hbanner_kle_banner1.jpg'%}" alt="KLE" class="img-fluid">
+                        </div>
+                        <img src="{% static 'statics/Uploads/banner/14hbanner_kle_banner1.jpg'%}" class="img-fluid" alt="KLE">
+
+                    </picture>
+                    <div class="banne1r-side-pannel">
+                        <div class="pannel-1info">
+                            <div class="bann1er-content">
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- side-pannel-end -->
+                </div>
+
+
+
+
+
+                <div class="item">
+                    <picture>
+
+                        <div id="homebanner1_rephomebanner_ctl02_panelmobile">
+                            <source media="(min-width:320px)" srcset="{% static 'statics/Uploads/banner/6hbanner_banner3.jpg'%}" alt="KLE" class="img-fluid">
+                        </div>
+                        <img src="{% static 'statics/Uploads/banner/6hbanner_banner3.jpg'%}" class="img-fluid" alt="KLE">
+
+                    </picture>
+                    <div class="banne1r-side-pannel">
+                        <div class="pa1nnel-info">
+                            <div class="1banner-content">
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- side-pannel-end -->
+                </div>
+
+
+
+
+            </div>
+        </div>
+        <!-- banner-end -->
+        <!-- home-pannel-1-start -->
+        <section class="home-pannel-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="course-choose" kle-aos="fade-up">
+                            <h3>
+                                40+</h3>
+                            <p>
+                                Programs to choose from</p>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="study-with" kle-aos="fade-down">
+                            <h1>
+                                STUDY WITH US</h1>
+                            <blockquote>
+                                We deliver an outstanding learning experience that equips our students for future success.</blockquote>
+                            <div class="view-course">
+                                <a href="/program.aspx?mpgid=30&pgidtrail=31#courseslist">View All Programs</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" kle-aos="fade">
+                        <div class="college-names">
+                            <h4>
+                                <a href="">BV Bhoomaraddi Campus</a></h4>
+                            <p>
+                                <a href="">Hubballi</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4" kle-aos="fade">
+                        <div class="college-names">
+                            <h4>
+                                <a href="">Dr. M S Sheshgiri Campus</a></h4>
+                            <p>
+                                <a href="">Belagavi</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4" kle-aos="fade">
+                        <div class="college-names">
+                            <h4>
+                                <a href="">KLE Law Campus</a></h4>
+                            <p>
+                                <a href="">Bengaluru</a></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- home-pannel-1-end -->
+        <!-- home-pannel-2-start -->
+        <section class="home-pannel-2">
+            <div class="home_title">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7 offset-lg-5">
+                            <h2>Placements</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel owl-theme placements-carousel" kle-aos="fade-up">
+
+                <div class="item">
+                    <figure>
+                        <img src="{% static 'statics/Uploads/Placedstudent/1ps_995A6007.jpg'%}" class="img-fluid" alt="family-forms">
+                        <div class="placements-pannel">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-7 offset-lg-5">
+                                        <div class="placement_text">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+
+            </div>
+            <div class="our-recruiters-pannel" kle-aos="fade-up">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+        <!-- home-pannel-2-end -->
+        <!-- home-pannel-3-start -->
+        <!-- <section class="home-pannel-3" kle-aos="fade-up">
+            <div class="container">
+                <div class="research-pannel">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="research-pannel-left-1">
+                                <h3>
+                                    Research</h3>
+                                <p>
+                                    Study at India’s <span>No.1</span> Research-Intensive University</p>
+                             </div>
+                            <div class="owl-carousel research-fact-slider owl-theme">
+
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="research-pannel-right">
+                                <div class="owl-carousel owl-theme research-carousel">
+                                    <div class="item">
+                                        <div class="research-shadow">
+                                            <img alt="pillar-research" class="img-fluid" src="images/home-research-img1.webp" />
+                                            <div class="funded-projects">
+                                                <div class="container">
+                                                    <p>
+                                                        Funded Projects</p>
+                                                    <blockquote>
+                                                        Economical production ecofriendly bioplastic for packaging segment</blockquote>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="research-shadow">
+                                            <img alt="pillar-research" class="img-fluid" src="images/home-research-img2.webp" />
+                                            <div class="funded-projects">
+                                                <div class="container">
+                                                    <p>
+                                                        Funded Projects</p>
+                                                    <blockquote>
+                                                        Economical production ecofriendly bioplastic for packaging segment</blockquote>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="research-shadow">
+                                            <img alt="pillar-research" class="img-fluid" src="images/home-research-img3.webp" />
+                                            <div class="funded-projects">
+                                                <div class="container">
+                                                    <p>
+                                                        Funded Projects</p>
+                                                    <blockquote>
+                                                        Economical production ecofriendly bioplastic for packaging segment</blockquote>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="research-pannel-bottom">
+                                <h3>
+                                    Entrepreneurship</h3>
+                                <ul>
+                                    <li>
+                                        Driving the regional economy <span>through entrepreneurial ecosystem</span></li>
+                                    <li>
+                                        KLE Tech- Center for Technology <span>Innovation and Entrepreneurship</span></li>
+                                    <li>
+                                        Center for Innovation Product <span>Development</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="view-course view-research">
+                    <a href="cpage.aspx?mpgid=70&pgidtrail=71">View All Research</a></div>
+            </div> -->
+
+        </section>
+        <!-- home-pannel-3-end -->
+        <!-- home-pannel-4-start -->
+        <section class="home-pannel-4" kle-aos="fade-up">
+            <div class="container">
+                <div class="about-pannel">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="about-kle">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="kle-ranked">
+                                <figure>
+                                    <img alt="about_kle_img" class="img-fluid" src="{% static 'statics/images/about_kle_img.png'%}" /></figure>
+                                <div class="kle-ranked-inner">
+                                    <div class="row">
+                                        <div class="col-md-7">
+                                            <div class="ranked-inner-left">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <p>
+                                                            Ranked</p>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <h3>
+                                                            1<sup>st</sup></h3>
+                                                    </div>
+                                                    <div class="col-md-9">
+                                                        <p>for Outstanding Institutional Transformation in Engineering Education by IUCEE</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="ranked-inner-right">
+                                                <h3>
+                                                    Outstanding achievements testifying our excellence</h3>
+                                                <figure>
+                                                    <img alt="about_kle_img2" class="img-fluid" src="{% static 'statics/images/about_kle_img2.png'%}" /></figure>
+                                                <p>
+                                                    Identifies BVB (KLE Tech) as one of the Five Places to Watch Globally for future leadership in Engineering Education</p>
+                                                <figure>
+                                                    <img alt="about_kle_img3" class="img-fluid" src="{% static 'statics/images/about_kle_img3.png'%}" /></figure>
+                                                <p>
+                                                    Awarded as University of the Year – South under Science & Technology Category</p>
+                                            </div>
+                                            <div class="mobile-ranked">
+                                                <div class="ranked-inner-right">
+                                                    <h3>
+                                                        Outstanding achievements testifying our excellence</h3>
+                                                    <div class="owl-carousel owl-theme mobile-achievements-carousel">
+                                                        <div class="item">
+                                                            <figure>
+                                                                <img alt="about_kle_img2" class="img-fluid" src="{% static 'statics/images/about_kle_img2.png'%}" /></figure>
+                                                            <p>
+                                                                Identifies BVB (KLE Tech) as one of the Five Places to Watch Globally for future leadership in Engineering Education</p>
+                                                        </div>
+                                                        <div class="item">
+                                                            <figure>
+                                                                <img alt="about_kle_img3" class="img-fluid" src="{% static 'statics/images/about_kle_img3.png'%}" /></figure>
+                                                            <p>
+                                                                Awarded as University of the Year – South under Science & Technology Category</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- home-pannel-4-end -->
+        <!-- home-pannel-5-start -->
+
+        <!-- home-pannel-5-end -->
+        <!-- footer-start -->
+        <footer class="footer">
+
+
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div class="footer-links">
+                                <h3>About </h3>
+                                <ul>
+                                    <ul>
+                                        <li><a href="" class="active">Overview</a></li>
+                                        <li><a href="">KLE Society</a></li>
+                                        <li><a href="">Office Bearers</a></li>
+                                    </ul>
+                                </ul>
+                            </div>
+                        </div>
+
+
+
+                        <!-- <div class="col-md-2">
+                            <div class="footer-links">
+                                <h3><a href="">Careers</a></h3>
+                                <h3><a href="">Contact</a></h3>
+                                <h3><a href="">Testimonials</a></h3>
+                                <h3><a href="" target="_blank">Info Cell</a></h3>
+                            </div>
+                        </div> -->
+
+
+                        <!-- <div class="col-md-2">
+                            <div class="footer-links">
+                                <h3>Admissions</h3>
+                                <ul>
+                                    <li><a href="">Domestic Admission</a></li>
+                                    <li><a href="">International Admission</a></li>
+                                    <li><a href="">FAQs</a></li>
+
+
+                                </ul>
+                            </div>
+                        </div> -->
+
+                        <!-- <div class="col-md-2">
+                            <div class="footer-links">
+                                <h3>Placements</h3>
+                                <ul>
+                                    <li><a href="">About Placements</a></li>
+                                    <li><a href="">Our Recruiters</a></li>
+
+
+                                </ul>
+                            </div>
+                        </div> -->
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row d-flex align-items-lg-center">
+                        <div class="col-md-5">
+
+                        </div>
+                        <div class="col-md-2">
+                            <div class="social-icon">
+                                <p>Follow Us</p>
+                                <ul>
+                                    <li><a href="" target="_blank"><img src="{% static 'statics/images/fb-icon.svg'%}" class="img-fluid" alt="fb-icon"></a></li>
+                                    <li><a href="" target="_blank"><img src="{% static 'statics/images/twiter-icon.svg'%}" class="img-fluid" alt="twiter-icon"></a></li>
+                                    <li><a href="" target="_blank"><img src="{% static 'statics/images/yt-icon.svg'%}" class="img-fluid" alt="yt-icon"></a></li>
+                                    <li><a href="" target="_blank"><img src="{% static 'statics/images/insta-icon.svg'%}" class="img-fluid" alt="insta-icon"></a></li>
+                                    <li><a href="" target="_blank"><img src="{% static 'statics/images/ln-icon.svg'%}" class="img-fluid" alt="ln-icon"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="copyright">
+                                <!-- <p>© . All Rights Reserved.</p> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+        </footer>
+
+        <script src="{% static 'statics/js/jquery.min.js'%}"></script>
+        <script src="{% static 'statics/js/bootstrap.bundle.min.js'%}"></script>
+        <script src="{% static 'statics/js/owl.carousel.min.js'%}"></script>
+        <script src="{% static 'statics/js/aos.js'%}"></script>
+        <script src="{% static 'statics/js/main.js'%}"></script>
+
+    </form>
+</body>
+
+</html>

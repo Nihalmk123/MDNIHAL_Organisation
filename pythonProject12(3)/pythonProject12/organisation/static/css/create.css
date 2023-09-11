@@ -1,0 +1,33 @@
+
+    img {
+        max-width: 100px;
+        max-height: 100px;
+    }
+
+    .input-group input{
+    width:150%;
+    }
+
+   .form-control1{
+   width:100%;
+   }
+    body{
+    }
+
+    #image-preview {
+            max-width: 150px;
+            max-height: 150px;
+            margin-top: 10px;
+            margin-bottom:5px;
+        }
+
+    #logo{
+    width:78%;
+    }
+
+
+.form-container {
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);

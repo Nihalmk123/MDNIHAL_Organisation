@@ -1,0 +1,127 @@
+ {% include 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+<style>
+.custom-color{
+background-color:#263049;
+color:white;
+}
+    .table thead th {
+    background-color: #F2d742; /* Change this to your desired color */
+    color: white;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f2f2f2; /* Change this to your desired color */
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f9f9f9; /* Change this to your desired color */
+}
+.btn {
+    margin-right: 5px; /* Add spacing between buttons */
+}
+
+
+</style>
+
+</head>
+
+<body class="bg-warning-subtle">
+ {% include 'navbar.html' %}
+
+
+<form>
+           {% if messages %}
+  <div class="toast-container">
+    {% for message in messages %}
+      <div class="toast show">
+        <div class="message {% if message.success %}{{ message.success }}{% endif %}">
+          <i class="bi bi-check2-circle text-light ">&nbsp;</i>{{ message }}
+        </div><i class="bi "></i>
+        <button class="close-button" onclick="hideToast(this)"><i class="bi bi-x text-white"></i></button>
+        <div class="progress-bar"></div>
+      </div>
+    {% endfor %}
+  </div>
+{% endif %}
+     <div class="container-fluid">
+     <div class="card px-1 py-2 m-3">
+         <div class="card-header-pills p-2 mb-1 custom-color m-1"><div class="custom-color">Manage Program Level</div></div>
+    <!-- Scrollable content -->
+         <hr class="btn-danger">
+            {% if prg_details %}
+                <table id="user-roles-records"
+                               class="table table-responsive-md table-striped table-bordered table-hover table-sm"
+                               cellspacing="0" width="100%">
+                    <thead class="bg-danger text-white">
+                        <tr>
+                            <th>Name</th>
+                            <th>program_category</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for pgrms in prg_details %}
+                            <tr>
+                                <td>{{ pgrms.name }}</td>
+                                <td>{{ pgrms.program_category }}</td>
+                                <td>{{ pgrms.status }}</td>
+                                <td>
+                                     <a href="{%url 'update_program' pgrms.id%}"class="btn btn-success px-2 py-2" role="button"
+                                     title="Edit Manage Program-level">
+                                         <span class="text-center">
+                                         <i class="bi bi-pencil-fill"></i>
+                                         </span>
+                                     </a>
+                                   <a href="{% url 'program_delete' id=pgrms.id %}"class="btn btn-danger px-2 py-2" role="button"
+                                       title="Delete Manage Program-level">
+                                         <span class="text-center">
+                                       <i class="bi bi-trash-fill"></i>
+                                         </span></a>
+                                     {% if pgrms.status %}
+                                        <a href="{%url 'program_activate' pgrms.id%}" class="btn btn-success px-2 py-2"   role="button"
+                                        title="Active Manage Program-level">
+                                             <span class="text-center">
+                                                <i class="bi bi-check-circle-fill fa-lg"
+                                                   aria-hidden="true"></i>
+                                            </span>
+                                        </a>
+                                    {% else %}
+                                        <a href="{%url 'program_activate' pgrms.id%}" class="btn btn-danger px-2 py-2" role="button"
+                                        title="DeActive Manage Program-level">
+                                             <span class="text-center">
+                                                <i class="bi bi-check-circle-fill fa-lg"
+                                                   aria-hidden="true"></i>
+                                             </span></a>
+                                    {% endif %}
+                                </td>
+                                 </td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            {% else %}
+                <p>No Program-level found.</p>
+            {% endif %}
+        </div>
+    </div>
+     </div>
+     </div>
+</div>
+</div>
+</form>
+
+ <script>
+    $(document).ready(function () {
+      $('table').DataTable();
+
+    });
+  </script>
+</body>
+</html>

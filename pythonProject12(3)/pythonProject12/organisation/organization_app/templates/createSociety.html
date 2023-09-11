@@ -1,0 +1,120 @@
+ {% include 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <title>Create Society</title>
+
+</head>
+<body class="bg-warning-subtle">
+ {% include 'navbar.html' %}
+<div class="container-fluid py-4">
+    <div class="row">
+        <div class="col-lg-4 offset-lg-4"> <!-- Offset 4 columns to center the form -->
+            <!-- Sidebar with scroll bar -->
+            <div class="form-container">
+                <form method="POST"  enctype="multipart/form-data" onsubmit="return validate();">
+                    {% csrf_token %}
+                    <h3 class="text-lg-center text-primary-emphasis">Create Society</h3>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" id="name" name="name" required placeholder="Name">
+                    </div>
+
+                    <div class="input-group mb-3">
+                         <input type="text" class="form-control" id="address" name="address" required placeholder="Address">
+                    </div>
+
+                         <div class="input-group mb-3">
+                         <input type="text" class="form-control" id="state" name="state" required placeholder="State">
+                    </div>
+
+                    <div class="input-group mb-3">
+                         <input type="text" class="form-control" id="city" name="city" required placeholder="City">
+                    </div>
+
+                    <div class="input-group mb-3">
+                         <input type="url" class="form-control" id="www" name="www" required placeholder="Website">
+                    </div>
+
+                    <div class="input-group mb-3">
+                         <input type="email" class="form-control" id="email" name="email" required placeholder="Email">
+                    </div>
+
+                    <div class="input-group mb-3">
+                         <input type="text" class="form-control" id="phone" name="phone" required placeholder="Phone">
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <label class="input-group-text" for="logo">Logo</label>
+                         <input type="file" class="form-control" id="logo" name="logo" accept="image/*" required>
+                    </div>
+
+                    <div id="image-preview"></div><br>
+
+                    {% if form.errors %}
+                        <ul class="errorlist">
+                            {% for field in form %}
+                                {% if field.errors %}
+                                    <li>{{ field.label }}: {{ field.errors|join:", " }}</li>
+                                {% endif %}
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--    <script src="{% static 'javascript/bootstrap.js' %}"></script>-->
+
+<script>
+        // javaScript code to update the image preview
+        var logoInput = document.getElementById('logo');
+        var imagePreview = document.getElementById('image-preview');
+
+        logoInput.addEventListener('change', function(event) {
+            var file = event.target.files[0];
+
+            if (file) {
+                var reader = new FileReader();
+
+                reader.addEventListener('load', function() {
+                    var imageElement = document.createElement('img');
+                    imageElement.src = reader.result;
+                    imagePreview.innerHTML = '';
+                    imagePreview.appendChild(imageElement);
+                });
+
+                reader.readAsDataURL(file);
+            } else {
+                imagePreview.innerHTML = '';
+            }
+        });
+
+   function validate() {
+  // Get the input value
+  var phoneInput = document.getElementById("phone").value;
+
+  // Define the regular expression pattern
+  var phonePattern = /^\d{10}$/;
+
+  // Check if the input matches the pattern
+
+  if (!phonePattern.test(phoneInput)) {
+    // Phone number is invalid
+    alert("Phone Number must have exactly 10 digits.");
+    return false;
+  }
+
+  // Both PIN and phone number are valid
+  return true;
+};
+    </script>
+
+
+
+</body>
+</html>

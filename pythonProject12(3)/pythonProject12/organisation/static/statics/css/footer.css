@@ -1,0 +1,339 @@
+.mobile_footer {
+    padding: 40px 0px 0;
+    background: #232323;
+    display: none;
+}
+
+.mobile_footer .col-lg-12 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.mobile_footer ul {
+    width: 50%;
+    margin-bottom: 33px;
+}
+
+.mobile_footer ul li {
+    margin-bottom: 5px;
+}
+
+.mobile_footer ul li a {
+    font: normal 16px/28px 'Roboto';
+    color: #fff;
+}
+
+.Sub-newsletter input {
+    font-size: 18px;
+    color: #666666;
+    font-weight: normal;
+    position: relative;
+    padding: 11px 15px;
+    width: 100%;
+}
+
+.Sub-newsletter blockquote {
+    position: relative;
+    width: 322px;
+}
+
+.Sub-newsletter p {
+    font-size: 18px;
+    color: #FFFFFF;
+    font-weight: 500;
+    padding-right: 17px;
+}
+
+.Sub-newsletter {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    justify-content: start;
+}
+
+.social-icon ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    padding-left: 14px;
+}
+
+.copyright p,
+.copyright a {
+    font-size: 15px;
+    color: #FFFFFF;
+    font-weight: normal;
+}
+
+.social-icon ul li {
+    width: 20px;
+    height: 20px;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+}
+
+@media (max-width: 1649px) {
+    .Sub-newsletter blockquote {
+        width: 260px;
+    }
+    .Sub-newsletter input {
+        font-size: 16px;
+        padding: 8px 10px;
+    }
+    .social-icon p {
+        font-size: 14px;
+    }
+    .copyright {
+        padding-left: 30px;
+    }
+    .copyright p,
+    .copyright a {
+        font-size: 13px;
+        line-height: 23px;
+    }
+    .Sub-newsletter p {
+        font-size: 16px;
+    }
+    .footer-bottom .col-md-2 {
+        padding: 0;
+    }
+    .social-icon ul {
+        padding-left: 9px;
+    }
+}
+
+/*--1649px-css-end---*/
+
+@media (max-width: 1399px) {}
+
+/*--1399px-css-end---*/
+
+@media (max-width: 1199px) {
+    .copyright p,
+    .copyright a {
+        font-size: 11px;
+        line-height: 23px;
+    }
+    .social-icon ul li {
+        width: 15px;
+        height: 15px;
+    }
+    .Sub-newsletter input {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+    .Sub-newsletter p {
+        font-size: 12px;
+        line-height: 22px;
+    }
+    .copyright {
+        padding-left: 15px;
+    }
+    .social-icon p {
+        font-size: 12px;
+        padding-top: 7px;
+    }
+    .Sub-newsletter blockquote {
+        margin-right: 15px;
+    }
+}
+
+/*--1199px-css-end---*/
+
+@media (max-width: 991px) {
+    .footer {
+        padding-bottom: 80px;
+    }
+    .footer-top {
+        display: none;
+    }
+    .footer-top .row {
+        row-gap: 0rem;
+    }
+    .footer-top .col-md-2 {
+        width: 50%;
+    }
+    .footer-links h3 {
+        font-size: 16px;
+        font-weight: normal;
+        margin-bottom: 15px;
+    }
+    .footer-top {
+        padding: 40px 20px;
+    }
+    .footer-bottom {
+        border-top: 1px solid rgb(255 255 255 / 21%);
+        background: #000;
+        padding: 30px 0px 0px;
+    }
+    .Sub-newsletter input {
+        font-size: 14px;
+        padding: 8px;
+        width: 100%;
+    }
+    .Sub-newsletter {
+        display: block;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        padding: 0 25px;
+        max-width: 600px;
+        margin: auto;
+    }
+    .Sub-newsletter p {
+        display: none;
+    }
+    .social-icon {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0 25px;
+        text-align: center;
+        max-width: 218px;
+        margin: auto;
+    }
+    .copyright {
+        padding: 20px 0;
+        background: #232323;
+    }
+    .copyright p {
+        font-size: 13px;
+        color: #FFFFFF;
+        font-weight: normal;
+        text-align: center;
+        margin: 2px 0 0;
+        line-height: 22px;
+    }
+    .footer-bottom .col-md-4 {
+        width: 100%;
+    }
+    .footer-bottom .col-md-2 {
+        width: 100%;
+    }
+    .footer-bottom .col-md-5 {
+        width: 100%;
+    }
+    .footer-bottom .container {
+        padding: 0;
+        margin: 0;
+        max-width: 100%;
+        overflow: hidden;
+    }
+    .mobile_footer {
+        display: block;
+    }
+    .Sub-newsletter {
+        gap: 1rem;
+        justify-content: unset;
+    }
+    .social-icon ul {
+        gap: 6px;
+    }
+    .Sub-newsletter blockquote {
+        width: 100%;
+    }
+    .social-icon p {
+        font-size: 16px;
+        padding-top: 7px;
+    }
+    .social-icon ul li {
+        width: auto;
+        height: auto;
+    }
+    .social-icon p {
+        font-size: 16px;
+        padding-top: 0;
+    }
+    .Sub-newsletter blockquote::before {
+        background: url(../images/subcribe_errow.svg);
+        width: 17px;
+        height: 12px;
+        right: 10px;
+    }
+    .mobile-services {
+        display: block;
+    }
+}
+
+/*--991px-css-end---*/
+
+@media (max-width:767px) {
+    .Sub-newsletter {
+        padding: 0 25px;
+        max-width: 500px;
+    }
+}
+
+/*--767px-css-end---*/
+
+@media (max-width:575px) {
+    .mobile_footer {
+        padding: 40px 30px 0;
+    }
+    .mobile_footer ul li a {
+        font: normal 14px/26px 'Roboto';
+    }
+    .mobile_footer ul li {
+        margin-bottom: 2px;
+    }
+    .Sub-newsletter {
+        padding: 0 25px;
+        max-width: 300px;
+    }
+    .copyright {
+        padding: 20px 10px;
+    }
+    .copyright p {
+        font-size: 11px;
+        line-height: 20px;
+    }
+    .apply_now_block a {
+        width: 60%;
+    }
+}
+
+/*--575px-css-end---*/
+
+@media (max-width:375px) {
+    .apply_now_block a {
+        width: 75%;
+    }
+    .mobile_footer {
+        padding: 40px 20px 0;
+    }
+    .Sub-newsletter {
+        max-width: 275px;
+    }
+    .mobile_footer ul {
+        margin-bottom: 20px;
+    }
+    .copyright {
+        padding: 20px 12px;
+    }
+    .copyright p {
+        font-size: 10px;
+        line-height: 20px;
+    }
+}
+
+/*--375-css-end---*/
+
+@media (max-width:320px) {
+    .mobile_footer {
+        padding: 40px 10px 0;
+    }
+}
+
+/*--320-css-end---*/

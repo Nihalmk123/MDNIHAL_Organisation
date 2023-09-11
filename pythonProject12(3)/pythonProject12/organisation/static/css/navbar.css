@@ -1,0 +1,17 @@
+ .navbar {
+            padding: 20px;
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .navbar-nav .nav-link {
+            font-size: 18px;
+            margin-right: 10px;
+        }
+
+        .dropdown-menu .dropdown-item {
+            font-size: 16px;
+        }

@@ -1,0 +1,2637 @@
+@media only screen and (min-width:1650px) {
+    .college-names h4 {
+        margin-bottom: 0px;
+    }
+    section.home-pannel-1 .row {
+        row-gap: 8rem;
+    }
+    .placement-cell ul li a {
+        font-weight: 500;
+    }
+    .kle-ranked-inner {
+        padding: 0 0rem 0rem 2.5rem;
+    }
+    .home-pannel-3 {
+        padding: 100px 0px 10px;
+    }
+}
+
+.our-recruiters-pannel.our-recruiters-pannel-mob {
+    display: none;
+}
+
+.testimonial-detail blockquote {
+    margin-bottom: 60px;
+}
+
+.testimonials-carousel .owl-dots {
+    margin-top: 10px;
+    margin-right: 70px;
+}
+
+@media (max-width: 1649px) {
+    .pannel-info h2 {
+        font-size: 36px;
+        margin-bottom: 15px;
+        line-height: 46px;
+    }
+    .banner-content {
+        padding: 0px 70px;
+    }
+    .study-with h1 {
+        font-size: 60px;
+    }
+    section.home-pannel-1 {
+        padding: 100px 0 125px;
+    }
+    .placements-pannel p {
+        font-size: 16px;
+    }
+    .research-pannel::before {
+        width: 100%;
+        height: 41.5rem;
+        bottom: 0;
+        left: 0;
+    }
+    .home-pannel-3 .research-pannel-left-1 {
+        padding-left: 70px;
+    }
+    .research-pannel-left-2 {
+        padding: 80px 60px 0;
+    }
+    .research-pannel-bottom {
+        padding: 40px 0px 0px 70px;
+    }
+    .home-pannel-3:before {
+        top: 39.7%;
+        left: 1%;
+        right: 0;
+        width: 100%;
+        height: 19.9%;
+    }
+    .research-pannel-left-2 h3 {
+        font-size: 90px;
+        line-height: 80px;
+    }
+    .view-course.view-research {
+        padding: 30px 0 0 73px;
+        margin: 0;
+    }
+    .home-pannel-3 {
+        padding: 110px 0px 0px;
+    }
+    .research-pannel-left-1 h3,
+    .home_title h2,
+    .about-kle h3,
+    .happening-heading h3 {
+        font-size: 38px;
+        line-height: 48px;
+    }
+    .ranked-inner-left .col-md-9 p,
+    .ranked-inner-right h3,
+    .about-kle-bottom ul li,
+    .happening-heading p,
+    .testimonial-detail blockquote,
+    .research-pannel-bottom h3,
+    .placements-pannel blockquote,
+    .study-with blockquote,
+    .college-names h4,
+    .ranked-inner-left .col-md-12 p {
+        font-size: 24px;
+        line-height: 34px;
+    }
+    /* .course-choose h3, .salary-package p{
+        font-size: 134px;
+    } */
+    .view-course a::before {
+        width: 8px;
+        height: 13px;
+        background-size: contain;
+    }
+    .ranked-inner-left .col-md-3 h3 {
+        font-size: 90px;
+        line-height: 80px;
+    }
+    .banner-side-pannel {
+        width: 469px;
+    }
+    .info-grade-l h2 {
+        margin-bottom: 0;
+        font-size: 21px;
+        line-height: inherit;
+    }
+    .college-names h4 {
+        margin-bottom: 10px;
+    }
+    .admissions ul li:nth-child(1) {
+        font-size: 24px;
+    }
+    .admissions ul li a {
+        font-size: 18px;
+    }
+    .admissions {
+        margin-top: 0;
+    }
+    .admissions ul li {
+        font-size: 21px;
+        padding: 7px 24px;
+    }
+    .apply-now a {
+        font-size: 16px;
+        padding: 14px 50px 14px 20px;
+    }
+    /* .placements-pannel {
+        top: 31%;
+        width: 500px;
+        left: 214px;
+    } */
+    .placements-pannel blockquote {
+        margin-bottom: 20px;
+    }
+    .our-recruiters-pannel {
+        bottom: 0;
+        padding-bottom: 75px;
+        position: relative;
+        margin-top: -150px;
+        max-width: 118rem;
+    }
+    /* .our-recruiters {
+        padding: 60px 40px;
+        gap: 20px;
+    } */
+    .placement-cell {
+        padding-top: 30px;
+    }
+    .our-recruiters-pannel .row {
+        row-gap: 0rem;
+    }
+    .home-pannel-2 {
+        padding-bottom: 0;
+    }
+    .research-pannel-left-1 h3 {
+        margin-bottom: 30px;
+    }
+    .research-pannel {
+        padding-bottom: 30px;
+        width: 1300px;
+    }
+    .home-pannel-3:before {
+        top: 44%;
+        width: 100%;
+        height: 217px;
+        left: 0;
+    }
+    .research-pannel .owl-carousel .owl-item img {
+        height: auto;
+    }
+    .research-pannel .item .research-shadow {
+        height: 100%;
+    }
+    .funded-projects {
+        bottom: 90px;
+        left: 30px;
+        width: 50%;
+    }
+    .research-pannel .col-md-4 {
+        justify-content: flex-start;
+    }
+    .research-pannel-bottom h3 {
+        margin-bottom: 40px;
+    }
+    .home-pannel-3 .container {
+        max-width: 1320px;
+    }
+    section.home-pannel-4 {
+        padding: 80px 0px 100px;
+    }
+    .kle-ranked {
+        margin-top: 55px;
+    }
+    .kle-ranked figure {
+        margin-top: 0;
+    }
+    .about-kle h3 {
+        margin-bottom: 15px;
+    }
+    /* .ranked-inner-left {
+        bottom: 20px;
+    } */
+    .ranked-inner-left .col-md-9 p {
+        padding: 0px 50px 0px 20px;
+    }
+    .ranked-inner-left .col-md-12 p {
+        margin-bottom: 15px;
+    }
+    .ranked-inner-left .col-md-3 h3 {
+        letter-spacing: -1px;
+    }
+    .ranked-inner-right h3 {
+        margin-bottom: 32px;
+    }
+    .ranked-inner-right p:last-child {
+        margin-bottom: 0;
+    }
+    .ranked-inner-right {
+        padding: 40px;
+        max-width: 400px;
+    }
+    .about-kle-bottom {
+        margin-top: 45px;
+    }
+    .happening-heading p {
+        padding: 12px 0 44px;
+    }
+    /* .home-pannel-5 .container1824 {
+        max-width: 1466px;
+        margin: auto;
+    } */
+    /* section.home-pannel-5::before {
+        width: 1320px;
+    } */
+    .happening-b-date p,
+    .happening-s-date p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .happening-b-date h4 {
+        font-size: 38px;
+    }
+    .happening-b-date {
+        width: 300px;
+        bottom: 15px;
+        left: 19px;
+        padding: 29px;
+    }
+    .kle-happenings .col-md-6:nth-child(2) .col-md-12 {
+        margin-bottom: 15px;
+        margin-top: 0px;
+    }
+    .happening-s-date {
+        bottom: 15px;
+        padding: 0 15px;
+    }
+    .kle-happenings .row {
+        --bs-gutter-x: 15px;
+        display: flex;
+        align-items: center;
+    }
+    .col-md-12 .happening-big-img {
+        margin-top: 15px;
+    }
+    .kle-testimonials .owl-carousel.owl-theme.testimonials-carousel.owl-loaded.owl-drag {
+        margin-top: 0;
+        padding-right: 80px;
+    }
+    .testimonial-detail {
+        margin-top: 0px;
+    }
+    /*--UI14041994-css-Start---*/
+    .home_title {
+        padding: 5rem 0;
+    }
+    .kle-testimonials h3 {
+        left: -15rem;
+    }
+    .placements-pannel {
+        top: 13rem;
+    }
+    section.home-pannel-2 .owl-theme .owl-nav.disabled+.owl-dots {
+        top: 38rem;
+    }
+    .home-pannel-2 .item figure {
+        height: 60rem;
+    }
+    .kle-testimonials {
+        max-width: 1100px;
+        padding: 5rem 0 0;
+        overflow: hidden;
+    }
+    .kle-testimonials .testimonial-detail {
+        margin-top: 0;
+    }
+    .kle-testimonials .testimonial-detail blockquote {
+        margin: 0 0 2rem;
+    }
+    .kle-testimonials .testimonial-img {
+        height: 40rem;
+        padding-right: 0;
+    }
+    .kle-testimonials .owl-theme .owl-nav.disabled+.owl-dots {
+        margin-top: -4rem;
+        margin-left: 2rem;
+    }
+    /*--UI14041994-css-End---*/
+    .research-pannel .research-fact-slider.owl-theme .owl-nav.disabled+.owl-dots {
+        bottom: -30px;
+    }
+}
+
+/*--1649px-css-end---*/
+
+@media (max-width: 1399px) {
+    .banner-side-pannel {
+        width: 430px;
+    }
+    .banner-content {
+        padding: 0px 50px;
+    }
+    .pannel-info h2 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .info-grade-l h2 {
+        font-size: 18px;
+        line-height: inherit;
+    }
+    .study-with h1 {
+        font-size: 62px;
+        line-height: 93px;
+    }
+    .salary-package p span {
+        font-size: 36px;
+        line-height: 57px;
+    }
+    .placement_text {
+        margin-top: 20px;
+    }
+    .research-pannel .research-fact-slider.owl-theme .owl-nav.disabled+.owl-dots {
+        bottom: -30px;
+        left: 70px;
+    }
+    .research-pannel-left-2 p {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+    .owl-theme .owl-dots .owl-dot span {
+        width: 8px;
+        height: 8px;
+    }
+    .course-choose {
+        padding: 3rem 3.2rem;
+        padding-top: 2.5rem
+    }
+    .ranked-inner-left .col-md-9 p,
+    .ranked-inner-right h3,
+    .about-kle-bottom ul li,
+    .happening-heading p,
+    .testimonial-detail blockquote,
+    .research-pannel-bottom h3,
+    .placements-pannel blockquote,
+    .study-with blockquote,
+    .college-names h4,
+    .ranked-inner-left .col-md-12 p,
+    .funded-projects blockquote {
+        font-size: 21px;
+        line-height: 31px;
+    }
+    .placements-pannel blockquote {
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .ranked-inner-right h3,
+    .ranked-inner-left .col-md-9 p,
+    .about-kle-bottom ul li,
+    .testimonial-detail blockquote {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .testimonial-detail blockquote {
+        margin-bottom: 0;
+    }
+    .testimonial-detail ul li:first-child {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .about-kle-bottom ul li img {
+        width: 90%;
+    }
+    .testimonial-detail ul li:last-child {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .happening-heading p {
+        font-size: 24px;
+        line-height: 33px;
+        font-weight: 300;
+    }
+    .research-pannel-bottom h3 {
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 600;
+    }
+    .college-names h4 {
+        font-size: 22px;
+        line-height: 32px;
+        font-weight: 600;
+    }
+    .college-names p {
+        font-size: 20px;
+    }
+    .study-with blockquote {
+        padding: 0 0 2rem;
+        font-size: 2.6rem;
+        line-height: 3.2rem;
+        font-weight: 400;
+    }
+    section.home-pannel-1 .row {
+        row-gap: 5rem;
+    }
+    .salary-package {
+        padding: 2.4rem;
+    }
+    .our-recruiters {
+        padding: 40px;
+        gap: 10px;
+    }
+    .placement-cell ul li a {
+        font-size: 16px;
+    }
+    .home-pannel-3 {
+        padding: 100px 0px 0px;
+    }
+    section.home-pannel-1 {
+        padding: 100px 0;
+    }
+    .our-recruiters-pannel {
+        margin-top: -100px;
+        max-width: 102rem;
+    }
+    .home-pannel-3 .container {
+        max-width: 1200px;
+        margin: auto;
+    }
+    .research-pannel {
+        padding-bottom: 60px;
+        width: 1150px;
+    }
+    .research-pannel-left-1 p {
+        font-size: 2.6rem;
+        line-height: 3.6rem;
+    }
+    .research-pannel-left-2 {
+        padding: 70px 0px 0px 70px;
+    }
+    .home-pannel-3:before {
+        top: 331px;
+        width: 100%;
+        height: 190px;
+        left: 0;
+    }
+    .funded-projects p {
+        margin-bottom: 15px;
+    }
+    .funded-projects {
+        bottom: 50px;
+        left: 20px;
+        width: 50%;
+    }
+    .research-pannel .owl-theme .owl-nav.disabled+.owl-dots {
+        bottom: 16px;
+        left: 30px;
+    }
+    .research-pannel-bottom ul li:first-child {
+        font-size: 18px;
+    }
+    .research-pannel-bottom ul li:nth-child(2),
+    .research-pannel-bottom ul li:nth-child(3) {
+        font-size: 16px;
+    }
+    .view-course.view-research {
+        padding: 3rem 0 0 9rem;
+        max-width: 1200px;
+    }
+    .about-kle p {
+        font-size: 21px;
+        line-height: 30px;
+    }
+    .research-pannel-right {
+        margin-top: 0;
+    }
+    .home_title h2 {
+        font-size: 36px;
+        line-height: 72px;
+    }
+    .ranked-inner-right h3 {
+        margin-bottom: 2.5rem;
+    }
+    .about-kle-bottom {
+        margin-top: 50px;
+    }
+    .about-kle-bottom ul {
+        margin-top: 50px;
+    }
+    section.home-pannel-4 {
+        padding: 80px 0px;
+    }
+    .happening-heading p {
+        padding: 8px 0 50px;
+    }
+    /* .home-pannel-5 .container1824 {
+        max-width: 1200px;
+        margin: auto;
+    } */
+    section.home-pannel-5::before {
+        width: 1100px;
+    }
+    .happening-b-date {
+        width: 300px;
+        bottom: 15px;
+        left: 19px;
+        padding: 18px;
+    }
+    .happening-s-date h4 {
+        font-size: 28px;
+    }
+    .happening-s-date h4 span {
+        font-size: 15px;
+        padding-bottom: 10px;
+    }
+    .happening-s-date p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .kle-testimonials {
+        max-width: 900px;
+    }
+    .kle-testimonials .owl-carousel.owl-theme.testimonials-carousel.owl-loaded.owl-drag {
+        margin-top: 0;
+        padding-right: 0;
+    }
+    .testimonial-detail blockquote {
+        padding: 15px 0;
+    }
+    .kle-testimonials .testimonial-img {
+        height: 350px;
+        object-fit: cover;
+        padding-right: 2px;
+    }
+    .kle-testimonials h3 {
+        left: -14%;
+    }
+    .about-kle-bottom blockquote {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .ranked-inner-right p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    /* .ranked-inner-right figure img {
+        width: 160px;
+    } */
+    .research-pannel::before {
+        height: 41.6rem;
+    }
+    /*--UI14041994-css-Start---*/
+    .study-with h1 {
+        font-size: 5rem;
+        line-height: 6rem;
+    }
+    .placements-pannel blockquote p {
+        font: italic 300 2.6rem/3rem var(--primary-font1);
+        margin-bottom: 3rem;
+    }
+    section.home-pannel-2 .owl-theme .owl-nav.disabled+.owl-dots {
+        top: 32rem;
+        left: -145px;
+    }
+    .home-pannel-2 .item figure {
+        height: 50rem;
+    }
+    .research-pannel-left-1 h3,
+    .home_title h2,
+    .about-kle h3,
+    .happening-heading h3,
+    .kle-testimonials h3 {
+        font-size: 3.3rem;
+        line-height: 4.3rem;
+    }
+    /*--UI14041994-css-End---*/
+}
+
+/*--1399px-css-end---*/
+
+@media (max-width: 1199px) {
+    .banner-side-pannel {
+        width: 360px;
+    }
+    .banner-content {
+        padding: 0px 40px;
+    }
+    .pannel-info h2 {
+        font-size: 24px;
+        line-height: 34px;
+    }
+    .info-grade-l h2 {
+        font-size: 16px;
+        line-height: inherit;
+    }
+    .info-grade-l {
+        padding: 10px 15px;
+    }
+    .info-grade-r {
+        padding: 5px 15px;
+        display: flex;
+        align-items: center;
+    }
+    .info-grade-r h3 {
+        font-size: 28px;
+        line-height: 20px;
+    }
+    section.home-pannel-1 {
+        padding: 70px 0 60px;
+    }
+    section.home-pannel-1 .row {
+        row-gap: 2rem;
+    }
+    .course-choose {
+        padding: 30px;
+        max-width: 100%;
+    }
+    .admissions ul li:nth-child(1) {
+        font-size: 20px;
+    }
+    .study-with h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .study-with blockquote {
+        padding: 0px 0 15px;
+        font-size: 24px;
+        line-height: 36px;
+    }
+    section.home-pannel-1 .college-names {
+        padding-right: 0;
+    }
+    .college-names p {
+        font-size: 18px;
+    }
+    .admissions ul li a {
+        font-size: 15px;
+    }
+    .admissions ul li {
+        padding: 7px 16px;
+    }
+    .apply-now a {
+        font-size: 13px;
+        padding: 13px 50px 13px 20px;
+    }
+    .home_title {
+        padding: 60px 0 40px;
+    }
+    .our-recruiters {
+        padding: 40px;
+        gap: 10px;
+    }
+    .our-recruiters-pannel {
+        margin-top: -80px;
+        padding-bottom: 50px;
+        max-width: 90rem;
+    }
+    .placement-cell ul li a {
+        font-size: 18px;
+    }
+    .placement-cell {
+        padding-top: 15px;
+    }
+    .home-pannel-3 .container {
+        max-width: 1000px;
+        margin: auto;
+    }
+    .research-pannel {
+        padding-bottom: 30px;
+        width: 936px;
+    }
+    .home-pannel-3:before {
+        top: 238px;
+        width: 100%;
+        height: 164px;
+    }
+    .research-pannel-left-1 p {
+        font-size: 24px;
+        line-height: 34px;
+    }
+    .home-pannel-3 {
+        padding: 60px 0px 0px;
+    }
+    .research-pannel-left-2 h3 {
+        font-size: 70px;
+        line-height: 65px;
+    }
+    .home-pannel-3 .research-pannel-left-1 {
+        padding-left: 30px;
+    }
+    .research-pannel-left-2 {
+        padding: 40px 30px 0;
+    }
+    .research-pannel-bottom {
+        padding: 60px 0px 0px 30px;
+    }
+    .research-pannel-bottom h3 {
+        margin-bottom: 15px;
+    }
+    .research-pannel-bottom ul li:nth-child(2) {
+        padding-left: 20px;
+        border-left: 4px solid #B6081D;
+    }
+    .research-pannel-bottom ul li:nth-child(3),
+    .research-pannel-bottom ul li:first-child,
+    .research-pannel-bottom ul li:nth-child(2) {
+        width: 33%;
+    }
+    .research-pannel-left-1 h3 {
+        margin-bottom: 15px;
+    }
+    .research-pannel-left-1 h3,
+    .home_title h2,
+    .about-kle h3,
+    .happening-heading h3,
+    .kle-testimonials h3 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .our-recruiters {
+        padding: 20px;
+        gap: 10px;
+    }
+    .view-course.view-research {
+        padding: 30px 0 0 53px;
+        max-width: 960px;
+    }
+    .kle-ranked {
+        margin-top: 40px;
+    }
+    .about-kle p {
+        font-size: 21px;
+    }
+    .about-kle h3 {
+        margin-bottom: 10px;
+    }
+    .ranked-inner-right {
+        padding: 20px;
+    }
+    .ranked-inner-right figure img {
+        width: 118px;
+    }
+    .ranked-inner-right h3 {
+        line-height: 26px;
+    }
+    .college-names p {
+        font-size: 18px;
+        line-height: 36px;
+        color: #B6081D;
+    }
+    .about-kle-bottom blockquote {
+        max-width: 100%;
+    }
+    .about-kle-bottom ul li img {
+        height: 70px;
+        width: auto;
+    }
+    .happening-s-date p {
+        font-size: 14px;
+        line-height: 18px;
+        padding-left: 10px;
+    }
+    .happening-b-date h4 span,
+    .happening-s-date h4 span {
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+    /* .home-pannel-5 .container1824 {
+        max-width: 990px;
+    } */
+    /* section.home-pannel-5::before {
+        width: 880px;
+    } */
+    .kle-testimonials {
+        max-width: 700px;
+        padding: 20px 0 0px;
+    }
+    .kle-testimonials .testimonial-img {
+        height: 350px;
+        padding-left: 30px;
+    }
+    .testimonial-detail blockquote {
+        padding: 15px 0;
+    }
+    .college-names h4 {
+        margin-bottom: 10px;
+        font-size: 28px;
+    }
+    .happening-heading p {
+        padding: 8px 0 40px;
+    }
+    section.home-pannel-5 {
+        padding: 5rem 0 5rem;
+    }
+    .course-choose h3,
+    .research-pannel-left-2 h3,
+    .salary-package p,
+    .ranked-inner-left .col-md-3 h3 {
+        font: bold 70px/1.1 var(--primary-font3);
+        letter-spacing: -2.9px;
+    }
+    .research-pannel::before {
+        height: 38.3rem;
+    }
+    .research-pannel .research-fact-slider.owl-theme .owl-nav.disabled+.owl-dots {
+        left: 30px;
+    }
+}
+
+/*--1199px-css-end---*/
+
+@media (max-width: 991px) {
+    .banner-side-pannel {
+        display: block;
+        width: 100%;
+    }
+    .banner-content {
+        height: 80vh;
+    }
+    .banner-content {
+        justify-content: flex-end;
+    }
+    .banner .banner-carousel .item {
+        height: 91vh;
+    }
+    .banner-content {
+        padding: 0 33px;
+    }
+    .pannel-info h2 {
+        font: 500 42px/42px var(--primary-font1);
+    }
+    .banner-content {
+        height: 86vh;
+        max-width: 760px;
+        margin: auto;
+    }
+    .info-grade-l {
+        padding: 10px 15px 10px;
+        width: 40%;
+    }
+    .info-grade-l h2 {
+        font-size: 24px;
+        font-family: var(--primary-font4);
+    }
+    .study-with {
+        margin-bottom: 30px;
+    }
+    .study-with blockquote {
+        padding-bottom: 10px;
+    }
+    section.home-pannel-1 .row .col-md-4 {
+        width: 100%;
+        position: relative;
+        z-index: 1;
+    }
+    section.home-pannel-1 .row .col-md-4::before {
+        width: 1050px;
+        height: 100%;
+        position: absolute;
+        left: -150px;
+        bottom: 0;
+        content: "";
+        z-index: -1;
+        background: #fff;
+    }
+    section.home-pannel-1 {
+        padding: 30px 0 30px;
+        overflow: hidden;
+    }
+    section.home-pannel-1 .college-names {
+        padding: 26px 0 29px;
+        margin: 0;
+        gap: 0;
+    }
+    section.home-pannel-1 .row .col-md-4:first-child {
+        display: none;
+    }
+    section.home-pannel-1 .row {
+        row-gap: .2rem;
+    }
+    .college-names h4 br {
+        display: none;
+    }
+    .salary-package {
+        padding: 2rem 1.3rem;
+        margin: 0;
+        text-align: center;
+    }
+    .salary-package p {
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .our-recruiters-pannel {
+        margin-top: 0;
+        padding-bottom: 50px;
+    }
+    .home_title h2 {
+        color: #B6081D;
+    }
+    .our-recruiters-pannel .row .col-md-9 .col-md-3 {
+        width: 50%;
+    }
+    section.home-pannel-1 .row .col-md-12:last-child {
+        display: none;
+    }
+    .our-recruiters-pannel .row .col-md-12 {
+        display: none;
+    }
+    .our-recruiters-pannel .row .col-md-3 {
+        width: 100%;
+        padding-right: calc(var(--bs-gutter-x) * .5);
+        padding-left: calc(var(--bs-gutter-x) * .5);
+    }
+    .owl-carousel.owl-theme.placements-carousel.owl-loaded.owl-drag {
+        display: none;
+    }
+    .happening-s-date {
+        bottom: 15px;
+        padding: 0 15px;
+        width: 60%;
+    }
+    .happening-s-date p,
+    .happening-b-date p {
+        padding-right: 0;
+        font-size: 28px;
+        line-height: 38px;
+        padding-left: 15px;
+        font-weight: normal;
+        width: 82%;
+        color: #fff;
+    }
+    .happening-big-img::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, rgba(249, 253, 255, 0) 0%, rgba(0, 0, 0, 1) 100%);
+    }
+    .mobile-footer ul li {
+        display: inline-block;
+        width: 100%;
+    }
+    .mobile-footer {
+        padding: 25px 13px;
+    }
+    .mobile-footer ul li a {
+        color: #fff;
+        font-size: 12px;
+    }
+    .footer-top {
+        display: none;
+    }
+    .mobile-footer {
+        display: block;
+    }
+    .research-pannel .owl-theme .owl-nav.disabled+.owl-dots {
+        position: static;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin-top: 25px;
+    }
+    .home-pannel-3 {
+        padding: 40px 0px 0;
+        position: relative;
+    }
+    .research-pannel .row {
+        row-gap: 0;
+    }
+    .salary-package p {
+        font-size: 100px;
+        line-height: 89px;
+        margin: 30px 0 0;
+    }
+    .view-course a {
+        text-transform: uppercase;
+    }
+    section.home-pannel-1 .row .col-md-8 {
+        width: 100%;
+    }
+    .college-names {
+        margin-top: 0;
+        background: #FFFFFF;
+        padding: 24px;
+    }
+    .our-recruiters-pannel {
+        position: unset;
+        padding: 0 1.5rem;
+    }
+    .home_title {
+        position: unset;
+        padding: 25px 0;
+        text-align: center;
+    }
+    .our-recruiters-pannel.our-recruiters-pannel-mob {
+        position: unset;
+        display: block;
+    }
+    .our-recruiters-pannel.our-recruiters-pannel-mob .row .col-md-3 {
+        display: none;
+    }
+    .our-recruiters-pannel.our-recruiters-pannel-mob .row .col-md-9 .our-recruiters .col-md-3 {
+        display: block;
+        width: 50%;
+    }
+    .our-recruiters-pannel.our-recruiters-pannel-mob .row .col-md-9 {
+        display: block;
+        width: 100%;
+    }
+    .our-recruiters {
+        background: transparent;
+        padding: 0;
+        margin-top: 50px;
+    }
+    .our-recruiters .view-course {
+        text-align: center;
+        margin-top: 1rem
+    }
+    .research-pannel-right {
+        padding: 42px 0;
+        margin: 0;
+    }
+    .our-recruiters .col-md-3 {
+        padding: .8rem;
+    }
+    .our-recruiters h3 {
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+    .our-recruiters-img {
+        padding: 30px;
+        background: white;
+        text-align: center;
+        margin: auto;
+    }
+    .home-pannel-2 {
+        padding-bottom: 0;
+    }
+    .research-pannel-left-1 p {
+        display: none;
+    }
+    /* .research-pannel-left-2 {
+        display: none;
+    } */
+    /* .research-pannel-right .owl-carousel .owl-item img {
+        display: none;
+    } */
+    .funded-projects {
+        position: unset;
+        width: 100%;
+        text-align: center;
+        left: 0;
+        bottom: 0;
+        margin-top: 3rem;
+    }
+    .research-pannel-left-2 {
+        padding: 40px 0px 0;
+        text-align: center;
+    }
+    .funded-projects .container {
+        max-width: 100% !important;
+    }
+    .research-shadow::before {
+        position: unset;
+    }
+    .funded-projects p {
+        color: #333333;
+    }
+    .funded-projects blockquote {
+        color: #333333;
+        padding: 0;
+    }
+    .research-pannel .row .col-md-4 {
+        width: 100%;
+    }
+    .research-pannel .row .col-md-8 {
+        width: 100%;
+    }
+    .research-pannel-left-1 h3 {
+        text-align: center;
+        margin: 0;
+        font-size: 26px;
+    }
+    .research-pannel::before {
+        position: unset;
+    }
+    .home-pannel-3:before {
+        position: absolute;
+        content: "";
+        background: #F6F6F6;
+        width: 100%;
+        height: 70%;
+        bottom: 0;
+        left: 0%;
+        top: unset;
+    }
+    .research-pannel-bottom h3 {
+        margin-bottom: 15px;
+    }
+    .research-pannel-bottom ul li span {
+        display: inline;
+    }
+    .research-pannel-bottom ul {
+        display: flex;
+        row-gap: 9px;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .research-pannel-bottom ul li:first-child {
+        text-align: center;
+        font-weight: 400;
+        padding-bottom: 15px;
+        font-family: var(--primary-font1);
+        justify-content: center;
+    }
+    .research-pannel-bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        padding: 47px 0 0;
+    }
+    .research-pannel-bottom ul li:nth-child(2) {
+        padding: 10px 25px;
+        background: #fff;
+        width: 100%;
+    }
+    .research-pannel-bottom ul li:nth-child(3) {
+        padding: 10px 25px;
+        background: #fff;
+        width: 100%;
+    }
+    .kle-ranked {
+        display: block;
+    }
+    .ranked-inner-left {
+        position: static;
+        display: none;
+    }
+    .kle-ranked-inner {
+        position: static;
+        padding: 0px;
+    }
+    .view-course.view-research {
+        margin-top: 0;
+        padding-bottom: 47px;
+        padding-left: 0;
+        text-align: center;
+    }
+    .kle-happenings .col-md-6:nth-child(2) {
+        display: none;
+    }
+    .ranked-inner-right {
+        padding: 0;
+        text-align: center;
+        display: none;
+    }
+    .about-kle-bottom blockquote {
+        padding: 0px;
+    }
+    section.home-pannel-5::before {
+        width: 100%;
+    }
+    .about-kle-bottom ul {
+        display: none;
+    }
+    section.home-pannel-4 {
+        padding: 40px 0px 28px;
+    }
+    .happening-b-date {
+        background: none;
+        border-radius: 10px;
+        position: absolute;
+        width: 100%;
+        bottom: 9%;
+        left: 0;
+        display: flex;
+        padding: 0px 8px;
+        gap: 15px;
+        align-items: center;
+        padding: 3rem;
+    }
+    .testimonial-detail h3 {
+        display: none;
+    }
+    .kle-testimonials h3 {
+        position: relative;
+        left: 0;
+        top: 10px;
+        font-size: 30px;
+        padding-right: 0;
+        color: #B6081D;
+        text-align: center;
+        padding: 39px 0;
+    }
+    .kle-testimonials .owl-carousel.owl-theme.testimonials-carousel.owl-loaded.owl-drag {
+        margin-top: 0;
+        padding-right: 0;
+    }
+    .kle-testimonials .owl-dots {
+        margin-left: 0;
+        margin-top: 34px !important;
+    }
+    section.home-pannel-5 {
+        position: relative;
+        padding: 50px 0px 50px;
+        margin-bottom: 0;
+    }
+    .footer-top ul {
+        display: none;
+    }
+    .testimonial-detail {
+        margin-right: 0;
+        text-align: center;
+    }
+    nav.navbar {
+        transition: .2s
+    }
+    section.home-pannel-2 .our-recruiters .owl-theme .owl-nav.disabled+.owl-dots {
+        position: static;
+        margin: 3rem 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        left: auto;
+        bottom: 0;
+    }
+    .happening-heading p {
+        padding: 0px;
+        margin: 15px 0 30px;
+        font-weight: normal;
+    }
+    .research-pannel .col-md-12 {
+        background: #f6f6f6;
+        position: relative;
+    }
+    .research-pannel .col-md-12::before {
+        width: 1050px;
+        height: 100%;
+        position: absolute;
+        left: -150px;
+        bottom: 0;
+        content: "";
+        z-index: -1;
+        background: #f6f6f6;
+    }
+    .about-kle-bottom {
+        display: none;
+    }
+    .ranked-inner-right p {
+        font-size: 16px;
+        margin: 20px 15px 0;
+    }
+    .ranked-inner-right h3 {
+        margin-bottom: 12px;
+    }
+    .happening-heading h3 {
+        font-weight: 800;
+        font-size: 30px;
+    }
+    .happening-b-date.happening-bs-date h4 span {
+        border: 0px;
+    }
+    .testimonial-detail blockquote {
+        font-size: 21px;
+    }
+    .testimonial-detail ul li:first-child,
+    .testimonial-detail ul li:last-child {
+        font-family: var(--primary-font1);
+    }
+    .mobile-recognition .owl-carousel .owl-item img {
+        width: auto;
+        margin: auto;
+    }
+    .mobile-recognition {
+        padding: 24px 0px 0;
+        display: block;
+    }
+    .about-kle .mobile-recognition h3 {
+        color: #333;
+    }
+    .about-kle .mobile-recognition h3 br {
+        display: none;
+    }
+    .mobile-recognition .owl-stage {
+        display: flex;
+        align-items: center;
+    }
+    .mobile-ranked {
+        display: block;
+        padding: 1rem 0;
+        padding-bottom: 3rem;
+    }
+    .mobile-ranked .ranked-inner-right {
+        display: block;
+        max-width: 100%;
+    }
+    .mobile-ranked .ranked-inner-right .owl-carousel .owl-item img {
+        width: auto;
+        margin: 0 auto;
+    }
+    .mobile-ranked .owl-theme .owl-nav.disabled+.owl-dots {
+        margin-top: 35px;
+    }
+    .our-recruiters .owl-carousel .owl-item img {
+        margin: auto;
+        width: auto;
+    }
+    .kle-ranked-inner .col-md-7 {
+        display: none;
+    }
+    .kle-ranked-inner .col-md-5 {
+        width: 100%;
+        padding: 20px 0 0;
+    }
+    .kle-happenings .col-md-6 {
+        width: 100%;
+        padding-right: calc(var(--bs-gutter-x) * .5);
+        padding-left: calc(var(--bs-gutter-x) * .5);
+    }
+    .col-md-12 .happening-big-img {
+        margin-top: 15px;
+    }
+    .kle-testimonials .col-md-5 {
+        width: 100%;
+    }
+    .mobile-footer ul {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .mobile-footer ul li:nth-child(8n) {
+        margin-bottom: 15px;
+    }
+    .our-recruiters-pannel .col-md-9 {
+        width: 100%;
+    }
+    .research-pannel-left-1 h3,
+    .home_title h2,
+    .about-kle h3,
+    .happening-heading h3,
+    .kle-testimonials,
+    .our-recruiters h3,
+    .research-pannel-bottom h3 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .ranked-inner-left .col-md-9 p,
+    .funded-projects p,
+    .salary-package h3,
+    .ranked-inner-right h3,
+    .about-kle-bottom ul li,
+    .happening-heading p,
+    .testimonial-detail blockquote,
+    .placements-pannel blockquote,
+    .study-with blockquote,
+    .college-names h4,
+    .ranked-inner-left .col-md-12 p,
+    .funded-projects blockquote {
+        font-size: 21px;
+        line-height: 31px;
+    }
+    .about-kle p,
+    .about-kle .mobile-recognition h3 {
+        font-size: 18px;
+    }
+    .salary-package h3 {
+        font-weight: normal;
+    }
+    .research-pannel {
+        padding-bottom: 0px;
+        width: 100%;
+    }
+    .home-pannel-3 .container {
+        max-width: 720px;
+        margin: auto;
+    }
+    .research-pannel-bottom ul li:nth-child(3),
+    .research-pannel-bottom ul li:first-child,
+    .research-pannel-bottom ul li:nth-child(2) {
+        width: 100%;
+        padding: 15px 33px;
+        font-size: 18px;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        border: none;
+    }
+    .research-pannel-bottom ul li:nth-child(3)::before,
+    .research-pannel-bottom ul li:nth-child(2)::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        width: 5px;
+        height: 36px;
+        background: #B6081D;
+    }
+    .research-pannel-bottom ul li:nth-child(3)::before {
+        background: #42517D;
+    }
+    .kle-ranked {
+        margin-top: 20px;
+        overflow: hidden;
+    }
+    .happening-s-date,
+    .happening-b-date {
+        bottom: 25px;
+        padding: 0 3rem;
+        width: 100%;
+    }
+    .home-pannel-5 .container1824 {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+    .happening-s-date h4 span,
+    .happening-b-date h4 span {
+        font-size: 28px;
+        padding-bottom: 10px;
+        font-weight: normal;
+        border: none;
+    }
+    .happening-s-date h4,
+    .happening-b-date h4 {
+        font-size: 48px;
+        max-width: 18%;
+        color: #fff;
+        background: transparent;
+    }
+    .happening-small-img img,
+    .col-md-12 .happening-big-img img {
+        width: 100%;
+    }
+    .kle-testimonials {
+        max-width: 100%;
+        padding: 0px;
+    }
+    .kle-happenings .item .col-md-6:nth-child(2) {
+        display: block;
+        order: 0;
+        text-align: center;
+        padding: 0;
+    }
+    .kle-happenings .item img {
+        width: 100%;
+        height: auto;
+    }
+    .kle-happenings .item .col-md-6:nth-child(1) {
+        order: 1;
+    }
+    .testimonial-detail blockquote {
+        padding: 30px 0 24px;
+    }
+    .kle-testimonials .testimonial-img {
+        height: 40rem;
+        padding-left: 0;
+    }
+    .banner .owl-carousel .owl-item img {
+        object-fit: cover;
+        object-position: center;
+    }
+    section.home-pannel-4 .container {
+        max-width: 100%;
+        padding: 0;
+        overflow: hidden;
+    }
+    section.home-pannel-4 .about-kle,
+    section.home-pannel-4 .mobile-ranked,
+    .testimonial-detail {
+        max-width: 720px;
+        margin: auto;
+    }
+    .kle-testimonials .owl-carousel.testimonials-carousel .owl-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    /*--UI14041994-css-Start---*/
+    .happening-small-img a img {
+        height: auto;
+    }
+    .kle-testimonials .owl-theme .owl-nav.disabled+.owl-dots {
+        margin-top: -4rem;
+        margin: 0;
+    }
+    .kle-testimonials .testimonial-detail blockquote {
+        margin: 0;
+    }
+    /*--UI14041994-css-End---*/
+    .info-grade-l p {
+        max-width: 17rem;
+    }
+    /*--UI14041994-27-07-2023-css-End---*/
+}
+
+/*--991px-css-end---*/
+
+@media (max-width: 767px) {
+    .banner-content {
+        max-width: 560px;
+        padding-right: 60px;
+        padding: 0 60px 0 22px;
+    }
+    .pannel-info h2 {
+        font: 500 32px/32px var(--primary-font1);
+    }
+    .info-grade-l {
+        padding: 10px 15px 10px;
+        width: 50%;
+    }
+    .info-grade-l h2 {
+        font-size: 21px;
+        font-family: var(--primary-font4);
+    }
+    .study-with h1 {
+        font-size: 36px;
+    }
+    .salary-package p {
+        font-size: 100px;
+        line-height: 90px;
+        margin: 20px 0 0;
+    }
+    .our-recruiters {
+        margin-top: 40px;
+    }
+    .our-recruiters h3 {
+        margin-bottom: 15px;
+    }
+    .our-recruiters {
+        gap: 0;
+    }
+    .our-recruiters .col-md-3 {
+        padding: 8px;
+    }
+    section.home-pannel-2 .our-recruiters .owl-theme .owl-nav.disabled+.owl-dots {
+        margin: 25px 0 0;
+    }
+    .our-recruiters-pannel {
+        padding-bottom: 40px;
+    }
+    .research-pannel-right {
+        padding: 30px 0;
+        margin: 0;
+    }
+    .funded-projects p {
+        margin-bottom: 10px;
+    }
+    .research-pannel-bottom {
+        padding: 37px 0 0;
+    }
+    .research-pannel-bottom h3 {
+        margin-bottom: 5px;
+    }
+    .home-pannel-3 .container,
+    .view-course.view-research,
+    section.home-pannel-4 .about-kle,
+    section.home-pannel-4 .mobile-ranked,
+    .testimonial-detail {
+        max-width: 540px;
+        margin: auto;
+    }
+    .view-course.view-research {
+        padding-bottom: 37px;
+    }
+    .kle-ranked-inner .col-md-5 {
+        padding: 15px 0 0;
+    }
+    section.home-pannel-5 {
+        padding: 40px 0px;
+    }
+    .happening-s-date p,
+    .happening-b-date p {
+        padding-right: 15px;
+        font-size: 18px;
+        line-height: 28px;
+        width: 80%;
+    }
+    .happening-s-date,
+    .happening-b-date {
+        bottom: 25px;
+        padding: 0 25px;
+        width: 90%;
+    }
+    .happening-s-date h4,
+    .happening-b-date h4 {
+        font-size: 38px;
+        max-width: 18%;
+    }
+    .happening-s-date h4 span,
+    .happening-b-date h4 span {
+        font-size: 18px;
+    }
+    .kle-testimonials h3 {
+        padding: 30px 0;
+    }
+    .testimonial-detail blockquote {
+        padding: 20px 0 14px;
+    }
+    .testimonial-detail ul li:last-child {
+        font-size: 15px;
+        line-height: 23px;
+    }
+    .happening-b-date {
+        left: 2.8rem;
+    }
+}
+
+/*--767px-css-end---*/
+
+@media (max-width: 575px) {
+    .ranked-inner-left .col-md-9 p,
+    .funded-projects p,
+    .salary-package h3,
+    .ranked-inner-right h3,
+    .about-kle-bottom ul li,
+    .happening-heading p,
+    .testimonial-detail blockquote,
+    .placements-pannel blockquote,
+    .study-with blockquote,
+    .college-names h4,
+    .ranked-inner-left .col-md-12 p,
+    .funded-projects blockquote {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .study-with {
+        gap: 5px;
+        margin-bottom: 20px;
+    }
+    .view-course a {
+        font-size: 15px;
+    }
+    .banner-content {
+        max-width: 100%;
+        padding: 0 60px 0 30px;
+    }
+    section.home-pannel-1 {
+        padding: 30px 1.5rem 0;
+    }
+    .home-pannel-3 .container,
+    .view-course.view-research,
+    section.home-pannel-4 .about-kle,
+    section.home-pannel-4 .mobile-ranked,
+    .testimonial-detail {
+        max-width: 100%;
+        margin: auto;
+    }
+    .study-with h1 {
+        font-size: 28px;
+    }
+    section.home-pannel-1 .college-names {
+        padding: 15px 0 20px;
+    }
+    .college-names p {
+        font-size: 16px;
+    }
+    .our-recruiters-pannel .row {
+        row-gap: 0rem;
+    }
+    .home_title {
+        padding: 25px 0 15px;
+    }
+    .salary-package p {
+        font-size: 90px;
+        line-height: 80px;
+        margin: 20px 0 0;
+    }
+    .research-pannel-right {
+        padding: 20px 0 30px;
+        margin: 0;
+    }
+    .research-pannel-bottom {
+        padding: 27px 15px 0;
+    }
+    .research-pannel-bottom ul {
+        row-gap: 0;
+    }
+    .research-pannel-bottom ul li:nth-child(2) {
+        margin-bottom: 9px;
+    }
+    .info-grade-l {
+        padding: 10px 15px 10px;
+        width: 75%;
+    }
+    .research-pannel-bottom ul li:nth-child(3),
+    .research-pannel-bottom ul li:first-child,
+    .research-pannel-bottom ul li:nth-child(2) {
+        padding: 15px 25px;
+        font-size: 16px;
+    }
+    .research-pannel-left-1 h3,
+    .kle-testimonials h3,
+    .home_title h2,
+    .about-kle h3,
+    .happening-heading h3,
+    .kle-testimonials,
+    .our-recruiters h3,
+    .research-pannel-bottom h3 {
+        font-size: 24px;
+        line-height: 34px;
+    }
+    .about-kle,
+    .mobile-ranked,
+    .happening-heading,
+    .testimonial-detail {
+        padding: 0 20px;
+    }
+    .mobile-ranked .owl-theme .owl-nav.disabled+.owl-dots {
+        margin-top: 10px;
+    }
+    .mobile-ranked .ranked-inner-right .owl-carousel .owl-item img {
+        width: 100px;
+        margin: 0 auto;
+    }
+    .ranked-inner-right p {
+        font-size: 16px;
+        margin: 15px 0;
+    }
+    .happening-heading p {
+        padding: 0px;
+        margin: 11px 0 20px;
+        font-weight: normal;
+    }
+    .happening-s-date,
+    .happening-b-date {
+        bottom: 20px;
+        width: 100%;
+    }
+    .happening-s-date p,
+    .happening-b-date p {
+        padding-right: 0px;
+        font-size: 16px;
+        line-height: 24px;
+        width: 80%;
+    }
+    .happening-s-date,
+    .happening-b-date {
+        bottom: 10px;
+        padding: 0 15px;
+        left: inherit;
+        gap: 0;
+    }
+    .happening-s-date h4,
+    .happening-b-date h4 {
+        font-size: 28px;
+        max-width: 20%;
+        margin-bottom: 0;
+    }
+    .happening-s-date h4 span,
+    .happening-b-date h4 span {
+        font-size: 16px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .kle-testimonials h3 {
+        padding: 30px 0 15px;
+    }
+    .testimonial-detail ul li:first-child {
+        font-size: 18px;
+    }
+    .our-recruiters-img {
+        padding: 10px;
+    }
+    .call_block ul {
+        padding: 0;
+    }
+    /*--UI14041994-27-07-2023-css-End---*/
+    .info-grade-l p {
+        max-width: 12rem;
+    }
+    /*--UI14041994-27-07-2023-css-End---*/
+}
+
+/*--575px-css-end---*/
+
+@media (max-width: 375px) {
+    .info-grade-l {
+        padding: 10px 15px 10px;
+        width: 85%;
+    }
+    .banner-content {
+        height: 88vh;
+        padding: 0 2.5rem;
+    }
+    .study-with h1 {
+        font-size: 24px;
+    }
+    .ranked-inner-left .col-md-9 p,
+    .funded-projects p,
+    .salary-package h3,
+    .ranked-inner-right h3,
+    .about-kle-bottom ul li,
+    .happening-heading p,
+    .testimonial-detail blockquote,
+    .placements-pannel blockquote,
+    .study-with blockquote,
+    .college-names h4,
+    .ranked-inner-left .col-md-12 p,
+    .funded-projects blockquote {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .salary-package p {
+        font-size: 60px;
+        line-height: 70px;
+        margin: 15px 0 0;
+    }
+    .our-recruiters {
+        margin-top: 30px;
+    }
+    .our-recruiters-img {
+        padding: 0;
+        margin: 0;
+    }
+    .our-recruiters .col-md-3 {
+        padding: 6px;
+    }
+    .our-recruiters-pannel {
+        padding-bottom: 30px;
+    }
+    .home-pannel-3 {
+        padding: 30px 0px 0;
+    }
+    .research-pannel-left-1 h3,
+    .kle-testimonials h3,
+    .home_title h2,
+    .about-kle h3,
+    .happening-heading h3,
+    .kle-testimonials,
+    .our-recruiters h3,
+    .research-pannel-bottom h3 {
+        font-size: 21px;
+        line-height: 30px;
+    }
+    .research-pannel-right {
+        padding: 15px 0 25px;
+    }
+    .research-pannel-bottom ul li:nth-child(3),
+    .research-pannel-bottom ul li:nth-child(2) {
+        padding: 15px 20px;
+        font-size: 16px;
+    }
+    .research-pannel-bottom ul li:first-child {
+        padding: 0;
+        padding-bottom: 15px;
+    }
+    .view-course.view-research {
+        padding: 20px 0 30px;
+    }
+    section.home-pannel-4 {
+        padding: 30px 0px 28px;
+    }
+    .about-kle p,
+    .about-kle .mobile-recognition h3 {
+        font-size: 16px;
+    }
+    .about-kle h3 {
+        margin-bottom: 15px;
+    }
+    .mobile-recognition .owl-carousel .owl-item img {
+        width: auto;
+        height: 50px;
+    }
+    .happening-s-date p,
+    .happening-b-date p {
+        padding-right: 0px;
+        font-size: 15px;
+        line-height: 21px;
+        width: 80%;
+        padding-left: 10px;
+    }
+    .testimonial-detail ul li:first-child {
+        font-size: 16px;
+    }
+    .kle-testimonials h3 {
+        padding: 20px 0;
+    }
+    section.home-pannel-5 {
+        padding: 3rem 0;
+    }
+    .college-names h4 {
+        margin-bottom: 0;
+    }
+    section.home-pannel-1 .college-names {
+        padding: 15px 0;
+    }
+    .call_block li a {
+        font-size: 21px;
+    }
+    /*--UI14041994-27-07-2023-css-End---*/
+    .info-grade-l p {
+        max-width: 15rem;
+    }
+    /*--UI14041994-27-07-2023-css-End---*/
+}
+
+/*--375px-css-end---*/
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+    .happening-b-date {
+        width: 70%;
+    }
+    .happening-s-date p {
+        font-size: 12px;
+    }
+    .navbar-logo a img {
+        width: 235px;
+    }
+    .testimonial-detail blockquote {
+        font-size: 22px;
+    }
+    .ranked-inner-right p {
+        font-size: 14px;
+    }
+    /* .ranked-inner-left{bottom:10%;} */
+    .ranked-inner-left .col-md-3 h3 {
+        font-size: 85px;
+    }
+    .ranked-inner-left .col-md-9 p {
+        font-size: 23px;
+        line-height: 29px;
+    }
+    .research-pannel-bottom ul {
+        gap: 5%;
+    }
+    .ranked-inner-right h3 {
+        font-size: 18px;
+    }
+    .funded-projects {
+        width: 80%;
+    }
+    .navbar-links li a {
+        font-size: 13px;
+    }
+    .research-pannel-left-2 {
+        padding-bottom: 0px;
+    }
+    .banner-side-pannel {
+        width: 389px;
+    }
+    .banner-content {
+        margin-top: 0;
+        height: 80vh;
+        padding: 0px 38px;
+    }
+    .pannel-info .info-grade-l h2 {
+        font-size: 28px;
+    }
+    .college-names h4 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .admissions ul li {
+        font-size: 22px;
+    }
+    .admissions ul li a {
+        font-size: 15px;
+    }
+    .apply-now a {
+        font-size: 13px;
+    }
+    .placements-pannel blockquote {
+        font-size: 21px;
+        line-height: 31px;
+    }
+    .placements-pannel p {
+        font-size: 14px;
+    }
+    .home-pannel-2 {
+        padding-bottom: 50px;
+    }
+    .ranked-inner-right p {
+        font-size: 16px;
+    }
+}
+
+/* @media only screen and (max-width:820px) {
+    .happening-s-date p{padding-right: 15px;}
+    .mobile-footer ul li {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .mobile-footer {
+        padding: 25px 13px;
+    }
+
+    .mobile-footer ul li a {
+        color: #fff;
+        font-size: 12px;
+    }
+
+    .footer-top{display: none;}
+    .mobile-footer{display: block;}
+    .research-pannel .owl-theme .owl-nav.disabled+.owl-dots {
+        position: static;
+        bottom: 25px;
+        left: 0;
+        right: 0;
+        margin: 35px 0;
+    }
+
+    .home-pannel-3 {
+        padding: 40px 0px 0;
+        position: relative;
+    }
+
+    .research-pannel .row {
+        row-gap: 0;
+    }
+
+    .salary-package h3 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .salary-package p {
+        font-size: 128px;
+        line-height: 89px;
+        margin: 30px 0 0;
+    }
+    .view-course a {
+        text-transform: uppercase;
+    }
+    section.home-pannel-1 .row .col-md-8 {
+        width: 100%;
+    }
+
+    .college-names {
+
+        margin-top: 0;
+
+        background: #FFFFFF;
+
+        padding: 24px;
+
+    }
+    .our-recruiters-pannel {
+        position: unset;
+    }
+
+    .home_title {
+        position: unset;
+        padding: 25px 0;
+
+    }
+    .our-recruiters-pannel.our-recruiters-pannel-mob {
+        position: unset;
+        display: block;
+    }
+
+    .our-recruiters-pannel.our-recruiters-pannel-mob .row .col-md-3 {
+        display: none;
+    }
+
+    .our-recruiters-pannel.our-recruiters-pannel-mob .row .col-md-9 .our-recruiters .col-md-3 {
+        display: block;
+        width: 50%;
+    }
+
+    .our-recruiters-pannel.our-recruiters-pannel-mob .row .col-md-9 {
+        display: block;
+        width: 100%;
+    }
+
+    .our-recruiters-pannel .row {
+        row-gap: .8rem;
+    }
+
+    .our-recruiters {
+        background: transparent;
+        padding: 40px 10px 30px 10px;
+    }
+
+    .our-recruiters .col-md-3 {
+        padding: 0 5px;
+    }
+
+    .our-recruiters h3 {
+        text-align: center;
+        font-size: 21px;
+    }
+
+    .our-recruiters-img {
+        padding: 30px;
+        background: white;
+        text-align: center;
+        margin: auto;
+    }
+
+    .home-pannel-2 {
+        padding-bottom: 0;
+    }
+
+    .research-pannel-left-1 p {
+        display: none;
+    }
+
+    .research-pannel-left-2 {
+        display: none;
+    }
+
+    .research-pannel-right .owl-carousel .owl-item img {
+        display: none;
+    }
+
+    .funded-projects {
+        position: unset;
+        width: 100%;
+        text-align: center;
+    }
+
+    .research-shadow::before {
+        position: unset;
+    }
+
+    .funded-projects p {
+
+        color: #333333;
+
+        font-weight: bold;
+
+        font-size: 18px;
+
+    }
+
+    .funded-projects blockquote {
+
+        color: #333333;
+
+        padding: 0;
+
+        padding-bottom: -3px;
+
+        font-size: 21px;
+    }
+
+    .research-pannel .row .col-md-4 {
+        width: 100%;
+    }
+
+    .research-pannel .row .col-md-8 {
+        width: 100%;
+    }
+
+    .research-pannel-left-1 h3 {
+        text-align: center;
+        margin: 0;
+        font-size: 26px;
+    }
+
+    .research-pannel::before {
+        position: unset;
+    }
+
+    .home-pannel-3:before {
+        position: absolute;
+        content: "";
+        background: #F6F6F6;
+        width: 100%;
+        height: 55%;
+        bottom: 0;
+        left: 0%;
+        top: unset;
+
+    }
+
+    .research-pannel-bottom h3 {
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+
+    .research-pannel-bottom ul {
+        display: flex;
+        row-gap: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .research-pannel-bottom ul li:first-child {
+        text-align: center;
+        font-weight: 400;
+        padding-bottom: 15px;
+        font-family: var(--primary-font1);
+    }
+
+    .research-pannel-bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        margin-top: 40px;
+    }
+
+    .research-pannel-bottom ul li:nth-child(2) {
+        padding: 10px 25px;
+        background: #fff;
+        width: 100%;
+    }
+
+    .research-pannel-bottom ul li:nth-child(3) {
+        padding: 10px 25px;
+        background: #fff;
+        width: 100%;
+    }
+
+    .ranked-inner-left {
+        position: static;
+        display: none;
+    }
+
+    .kle-ranked-inner {
+        position: static;
+        padding: 0px;
+    }
+
+    .view-course.view-research {
+        margin-top: 0;
+        padding-bottom: 50px;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .kle-happenings .col-md-6:nth-child(2) {
+        display: none;
+    }
+
+    .ranked-inner-right {
+        padding: 0;
+        text-align: center;
+        display: none;
+    }
+
+    .about-pannel .row {
+        row-gap: 28px;
+    }
+
+    .about-kle-bottom blockquote {
+        padding: 0px;
+    }
+
+    section.home-pannel-5::before {
+        width: 100%;
+    }
+
+    .about-kle-bottom ul {
+        display: none;
+    }
+
+    section.home-pannel-4 {
+        padding: 40px 0px 10px;
+    }
+
+    .happening-b-date {
+        background: none;
+        border-radius: 10px;
+        position: absolute;
+        width: 100%;
+        bottom: 9%;
+        left: 3%;
+        display: flex;
+        padding: 0px 8px;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .happening-b-date h4,
+    .happening-b-date p {
+        color: #fff;
+    }
+
+    .kle-testimonials h3 {
+        font-size: 30px;
+        padding-right: 0;
+        color: #B6081D;
+    }
+
+    .kle-testimonials .owl-carousel.owl-theme.testimonials-carousel.owl-loaded.owl-drag {
+        margin-top: 0;
+        padding-right: 0;
+    }
+
+    .kle-testimonials .testimonial-img {
+        width: 100%;
+        text-align: center;
+        float: none;
+        margin: 30px 0 0;
+    }
+
+    .kle-testimonials .owl-dots {
+        margin-left: 0;
+        margin-top: 34px !important;
+    }
+
+    .kle-testimonials {
+        margin-top: 60px;
+    }
+
+    section.home-pannel-5 {
+        position: relative;
+        padding: 50px 0px 50px;
+        margin-bottom: 0;
+    }
+
+    .footer-top ul {
+        display: none;
+    }
+
+    .kle-happenings .col-md-12:nth-child(4) .col-md-6:nth-child(2) {
+        display: block;
+        order: 2;
+        text-align: center;
+    }
+
+    .kle-happenings .col-md-12:nth-child(4) .col-md-6:nth-child(2) {
+        display: block
+    }
+
+    .testimonial-detail {
+        margin-right: 0;
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    header.header.sticky nav.navbar {
+        padding: 16px 15px 16px 15px;
+        transition: .2s
+    }
+
+    nav.navbar {
+        transition: .2s
+    }
+
+    .sticky {
+        transform: translate(0px, 0px);
+    }
+
+    section.home-pannel-2 .our-recruiters .owl-theme .owl-nav.disabled+.owl-dots {
+        position: static;
+        margin: 35px 0 0;
+    }
+
+    .footer-top .row {
+        row-gap: 1rem;
+    }
+
+    .footer-top .col-md-2 {
+        width: 50%;
+    }
+
+    .footer-links h3 {
+        font-size: 14px;
+    }
+
+    .footer-top {
+        padding: 30px 0px;
+    }
+
+    .footer-bottom {
+        border-top: 1px solid rgb(255 255 255 / 21%);
+        padding: 20px 0px 0px;
+        background: #000;
+    }
+
+    .Sub-newsletter input {
+        font-size: 14px;
+        padding: 8px;
+        width: 100%;
+    }
+
+    .Sub-newsletter {
+        display: block;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        padding: 0 25px;
+    }
+
+    .Sub-newsletter p {
+        display: none;
+    }
+
+    .social-icon {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 50px;
+        text-align: center;
+        margin-bottom: 18px;
+    }
+
+    .footer-bottom .col-md-5 {
+        background: #232323;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .copyright p {
+        font-size: 10px;
+        color: #FFFFFF;
+        font-weight: normal;
+        text-align: center;
+        margin: 2px 0 0;
+    }
+
+    .happening-heading p {
+        font-size: 21px;
+        padding: 0 41px;
+        margin: 18px 0 30px;
+        font-weight: normal;
+    }
+
+    .about-kle h3 {
+        font-size: 25px;
+        padding: 0 2px;
+    }
+    .research-pannel .col-md-12 {
+        background: #f6f6f6;
+        padding: 0;
+    }
+
+    .about-kle p {
+        font-size: 16px;
+        font-weight: 300;
+        font-family: var(--primary-font1);
+        padding: 0 56px;
+    }
+
+    .about-kle-bottom {
+        display: none;
+    }
+
+    .ranked-inner-right p {
+        font-size: 12px;
+        margin: 20px 15px 0;
+    }
+
+    .ranked-inner-right h3 {
+        font-size: 16px;
+        font-weight: 800;
+        margin-bottom: 18px;
+    }
+
+    .happening-heading h3 {
+        font-weight: 800;
+        font-size: 30px;
+    }
+
+    .happening-b-date h4 {
+        font-size: 40px;
+        margin-bottom: 0;
+        display: inline-block;
+    }
+
+    .happening-b-date p {
+        width: 80%;
+        display: inline-block;
+    }
+
+    .happening-b-date h4 span {
+        width: 100%;
+        border: 0px;
+    }
+
+    .happening-b-date.happening-bs-date h4 span {
+        border: 0px;
+    }
+
+    .testimonial-detail blockquote {
+        font-size: 21px;
+    }
+
+    .testimonial-detail ul li:first-child,
+    .testimonial-detail ul li:last-child {
+        font-family: var(--primary-font1);
+    }
+
+    .mobile-recognition .owl-carousel .owl-item img {
+        width: auto;
+        margin: auto;
+    }
+
+    .mobile-recognition {
+        padding: 30px 20px;
+        display: block;
+    }
+
+    .about-kle .mobile-recognition h3 {
+        font-size: 16px;
+        color: #333;
+    }
+
+    .about-kle .mobile-recognition h3 br {
+        display: none;
+    }
+
+    .mobile-recognition .owl-stage {
+        display: flex;
+        align-items: center;
+    }
+
+    .mobile-ranked {
+        display: block;
+    }
+
+    .mobile-ranked .ranked-inner-right {
+        display: block;
+    }
+
+    .mobile-ranked .ranked-inner-right .owl-carousel .owl-item img {
+        width: auto;
+        margin: 0 auto;
+    }
+
+    .mobile-ranked .owl-theme .owl-nav.disabled+.owl-dots {
+        margin-top: 35px;
+    }
+
+    .our-recruiters .owl-carousel .owl-item img {
+        margin: auto;
+        width: auto;
+    }
+
+    .kle-ranked-inner .col-md-7 {
+        display: none;
+    }
+
+    .kle-ranked-inner .col-md-5 {
+        width: 100%;
+        padding: 50px 0 0;
+    }
+
+    .kle-happenings .col-md-6 {
+        width: 100%;
+    }
+
+    .kle-testimonials .col-md-5 {
+        width: 100%;
+    }
+    .mobile-footer ul {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .mobile-footer ul li:nth-child(8n) {
+        margin-bottom: 15px;
+    }
+    .footer {
+        padding-bottom: 80px;
+    }
+
+} */
+
+@media (min-width: 575px) {}
+
+@media (min-width: 768px) {
+    section.home-pannel-5::before {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    section.home-pannel-5::before {
+        max-width: 900px;
+    }
+    .home-pannel-5 .container1824 {
+        max-width: 1040px
+    }
+}
+
+@media (min-width: 1200px) {
+    section.home-pannel-5::before {
+        max-width: 1140px;
+    }
+    .home-pannel-5 .container1824 {
+        max-width: 1230px
+    }
+}
+
+@media (min-width: 1400px) {
+    section.home-pannel-5::before {
+        max-width: 1320px;
+    }
+    .home-pannel-5 .container1824 {
+        max-width: 1400px
+    }
+}
+
+@media (min-width: 1920px) {
+    section.home-pannel-5::before {
+        max-width: 1650px;
+    }
+    .home-pannel-5 .container1824 {
+        max-width: 1838px
+    }
+}

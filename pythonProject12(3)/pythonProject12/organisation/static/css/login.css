@@ -1,0 +1,44 @@
+body {
+            background-color:  ;
+        }
+
+        .container {
+            margin-top: 100px;
+        }
+
+        .card {
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+
+        .card-title {
+            font-size: 22px;
+            font-weight: 600;
+            color: #333333;
+            text-align: center;
+            padding-top: 10px;
+        }
+
+        .form-label {
+            font-weight: 600;
+            color: #333333;
+        }
+
+        .form-control {
+            border-radius: 8px;
+            height: 45px;
+        }
+
+        .btn-primary {
+            border-radius: 8px;
+            padding: 10px 40px;
+            font-weight: 600;
+            background-color: #007bff;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #0069d9;
+        }
+
